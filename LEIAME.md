@@ -48,6 +48,8 @@ Abra o Claude Code nesta pasta e peça ("quero um vídeo sobre buraco negro"), o
 | Voz final | `npm run video -- voz-final meu_video` (mostra o custo) e `--confirmo` (gera) | voz da ElevenLabs com o tempo de cada palavra |
 | Final | `npm run video -- final meu_video` | 1080×1920, 24 qps, −14 LUFS, em `entrega/` |
 
+O método de escrever a fala (as leis do roteiro que segura a atenção, a estrutura, a abertura, o ritmo e as pausas, o som) fica em `roteiros/consciencia/`; o agente lê antes de escrever. O `LEIAME.md` de lá diz o que não vem neste plugin.
+
 Para estudar um vídeo que você admira: `npm run video -- referencia meu_video video.mp4` (ou um link, com o `yt-dlp` instalado). Ele mede cortes por minuto, duração dos planos, paleta, brilho e volume. O vídeo de referência fica só na sua máquina e nada dele entra no seu vídeo.
 
 ## Computador travando?

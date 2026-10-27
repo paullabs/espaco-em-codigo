@@ -1,0 +1,130 @@
+{
+  "_leia": "Limites medidos que o conferir_roteiro.py usa. Cada número vem das referências (RV = roteiros_virais, P = série de terceiros em Shorts) e dos nossos roteiros; a explicação está em 03_ritmo_e_pausas.md. Em 19/10/2026 o autor corrigiu o excesso de frase curta (roteiro abstrato, telegráfico): as frases de até 3 palavras da narração têm teto (20% na dramática, 30% na leve) e a frase mediana tem piso de 4; o alvo da narração documental é 7–12 palavras (03_ritmo_e_pausas.md). Mudou a régua, muda aqui e no texto.",
+  "comum": {
+    "texto_tela_palavras_max": 5,
+    "funcoes_obrigatorias": [
+      "gancho"
+    ]
+  },
+  "leve": {
+    "comum": {
+      "palavras_por_min_falando": 225,
+      "frase_mediana_max": 7,
+      "batidas_com_reacao_pct_min": 40,
+      "silencio_virada_min_s": 1.5,
+      "frase_mediana_min": 4,
+      "frases_telegrama_pct_max": 30
+    },
+    "curto": {
+      "duracao": [
+        30,
+        60
+      ],
+      "gancho_palavras_max": 20,
+      "pergunta_titulo_s": [
+        2,
+        8
+      ],
+      "fala_pct": [
+        55,
+        85
+      ],
+      "frase_max": 16,
+      "silencios_15_por_min": [
+        1,
+        5
+      ],
+      "virada_pct": [
+        55,
+        90
+      ]
+    },
+    "longo": {
+      "duracao": [
+        420,
+        720
+      ],
+      "gancho_palavras_max": 30,
+      "pergunta_titulo_s": [
+        15,
+        50
+      ],
+      "fala_pct": [
+        42,
+        80
+      ],
+      "frase_max": 18,
+      "silencios_15_por_min": [
+        0.5,
+        5
+      ],
+      "virada_pct": [
+        60,
+        90
+      ],
+      "funcoes_obrigatorias_extra": [
+        "pergunta_titulo",
+        "demonstracao",
+        "escalada",
+        "custo",
+        "climax",
+        "pouso"
+      ]
+    }
+  },
+  "dramatica": {
+    "comum": {
+      "palavras_por_min_falando": 190,
+      "frase_mediana_max": 12,
+      "batidas_com_reacao_pct_min": 50,
+      "silencio_virada_min_s": 2.0,
+      "frase_mediana_min": 4,
+      "frases_telegrama_pct_max": 20
+    },
+    "curto": {
+      "duracao": [
+        30,
+        100
+      ],
+      "gancho_palavras_max": 25,
+      "fala_pct": [
+        35,
+        65
+      ],
+      "frase_max": 20,
+      "silencios_15_por_min": [
+        2,
+        6
+      ],
+      "virada_pct": [
+        75,
+        92
+      ]
+    },
+    "longo": {
+      "duracao": [
+        420,
+        720
+      ],
+      "gancho_palavras_max": 60,
+      "fala_pct": [
+        55,
+        80
+      ],
+      "frase_max": 24,
+      "silencios_15_por_min": [
+        0.5,
+        3
+      ],
+      "virada_pct": [
+        70,
+        95
+      ],
+      "funcoes_obrigatorias_extra": [
+        "escalada",
+        "virada",
+        "pouso"
+      ]
+    }
+  }
+}

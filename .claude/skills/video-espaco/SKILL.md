@@ -66,7 +66,7 @@ O modelo em branco é `projetos/_modelo`, com 3 falas e 5 planos. Copie o exempl
 
 ## Os portões (nunca pule; os ativos finais e a voz paga só vêm no fim)
 
-1. **Pergunta e roteiro.** Escreva no `IDEIAS.md`: a pergunta-mãe, a resposta que qualquer pessoa repete depois, três curiosidades reais com fonte e a pergunta final. Depois escreva o `roteiro.json`. **Mostre e espere o sim.**
+1. **Pergunta e roteiro.** Antes de escrever as falas, leia `roteiros/consciencia/00_PRINCIPIOS.md` (as leis do roteiro que segura a atenção) e `02_abertura.md`. Escreva no `IDEIAS.md`: a pergunta-mãe, a resposta que qualquer pessoa repete depois, três curiosidades reais com fonte e a pergunta final. Depois escreva o `roteiro.json`. **Mostre e espere o sim.**
 2. **Plano de cenas.** Na tabela do `IDEIAS.md`, para cada plano: o que a pessoa vê, o que ela entende e o que é novo. Depois escreva o `plano.json`.
 3. **Rascunho.** Siga a ordem de trabalho do `LEIA_O_PLANO.md`:
    - rode `voz`;
@@ -131,6 +131,7 @@ Se ainda faltar, escreva um `extra.js` no projeto (o formato está no fim do `LE
 | `references/dispositivos-didaticos.md` | como os materiais de ensino explicam marés, estações e o interior da Terra, os erros que as figuras induzem e os números conferidos |
 | `references/historico-completo-e-nivel-v11.md` | as 11 rodadas de retorno de um vídeo real (a supernova), o que cada uma ensinou e a checklist |
 | `references/licoes.md` | os erros que já foram cometidos e reprovados |
+| `roteiros/consciencia/` e `roteiros/moldes/MODELOS_DE_NARRATIVA.md` | o método de escrever o roteiro que segura a atenção (as leis em `00_PRINCIPIOS.md`, estrutura, abertura, ritmo e pausas, fala e imagem, som, verificação). Leia o `LEIAME.md` de lá antes: o `conferir_roteiro.py` e os moldes de história não vêm neste plugin |
 | `references/processo.md` | os portões em detalhe, com as checklists e os comandos de hoje |
 | `references/cena-e-cortes.md` | regras de cena e de corte (cita ferramentas daquele vídeo que não vêm no kit; hoje o caminho é `npm run video`) |
 | `references/efeitos.md` | como cada efeito foi pensado (idem) |
