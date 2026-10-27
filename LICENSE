@@ -1,0 +1,68 @@
+# LICENÇA DO ESPACO-EM-CODIGO, versão 0.1
+
+Copyright (c) 2026 LABS. Todos os direitos reservados, exceto os concedidos abaixo.
+
+## 1. Definições
+
+1.1 **"Kit"**: o código-fonte, a documentação e os demais arquivos distribuídos sob o nome *espaco-em-codigo*, inclusive o plugin do Claude Code com esse nome.
+1.2 **"Titular"**: LABS, canal de YouTube cujo nome e endereço constam no bloco `canal` do arquivo `estudio.config.json`, autor e detentor dos direitos sobre o Kit.
+1.3 **"Você"**: a pessoa ou entidade que exerce os direitos concedidos por esta licença.
+1.4 **"Marca d'Água"**: o selo fraco do canal do Titular desenhado sobre os quadros de vídeo pelo código do Kit (arquivos `estudio/espaco/marca_agenda.js`, `estudio/espaco/marca.js` e `estudio/espaco/pos.js`), com o nome do canal definido em `estudio/espaco/marca_agenda.js`.
+1.5 **"Seus Vídeos"**: vídeos, imagens e áudios que Você produz usando o Kit.
+1.6 **"Derivado"**: obra que modifica o Kit ou o incorpora.
+1.7 **"Componentes de Terceiros"**: códigos, fontes, dados e modelos de outros autores que o Kit usa ou cita, listados em `LICENCAS_TERCEIROS.md`.
+
+## 2. Concessão
+
+Sujeito às condições abaixo, o Titular concede a Você uma licença mundial, gratuita, não exclusiva e intransferível (salvo o previsto na seção 5) para: (a) usar o Kit para qualquer finalidade, inclusive comercial; (b) copiar e modificar o Kit e criar Derivados; (c) distribuir o Kit e Derivados, nos termos da seção 5; (d) produzir, publicar, monetizar e vender Seus Vídeos.
+
+## 3. Marca d'Água obrigatória
+
+3.1 Todo vídeo de Seus Vídeos que for publicado, enviado a terceiros ou exibido em público **deve conter a Marca d'Água**, como o Kit a desenha, durante toda a duração do vídeo.
+
+3.2 Você não pode remover, ocultar, cortar, desfocar, cobrir, tornar ilegível, reduzir a opacidade ou o tamanho da Marca d'Água, trocar o texto do canal, nem modificar ou contornar o código que a desenha ou que a verifica (`npm run conferir -- marca` e o selo `estudio/espaco/marca.selo.json`).
+
+3.3 Não é violação: usar o Kit sem publicar o vídeo (testes e rascunhos), nem alterar o Kit sem tocar na Marca d'Água.
+
+3.4 Para publicar sem a Marca d'Água, ou com outra, Você precisa de autorização escrita do Titular, que pode ser condicionada a pagamento.
+
+## 4. Seus Vídeos e seu conteúdo
+
+4.1 Você é o titular do roteiro, das ideias e dos vídeos que criar. Pode publicá-los e monetizá-los, respeitada a seção 3.
+4.2 As partes do Kit que aparecem nos vídeos (os corpos celestes, os efeitos, a câmera, os estilos de design) podem aparecer nos Seus Vídeos para qualquer finalidade, mas isso não transfere a Você direitos sobre o Kit.
+4.3 O Titular não reivindica direitos sobre o conteúdo editorial de Seus Vídeos.
+
+## 5. Distribuição do Kit e de Derivados
+
+5.1 Ao distribuir o Kit ou um Derivado, Você deve: (a) incluir esta licença e o aviso de direitos do Titular; (b) manter intactos a Marca d'Água, o código que a desenha e a verificação (3.2); (c) manter o arquivo `LICENCAS_TERCEIROS.md` e a pasta `licencas/`; (d) indicar de forma visível que o Derivado foi modificado e por quem.
+5.2 Derivados ficam sujeitos a esta mesma licença, inclusive à seção 3, que Você deve repassar a quem os receber.
+5.3 Você não pode vender ou licenciar o Kit ou Derivados como produto, curso ou template sem autorização escrita do Titular. Isto não limita a venda e a monetização de Seus Vídeos (seção 2, alínea d).
+5.4 Não use o nome *espaco-em-codigo*, nem o nome ou o logotipo do canal do Titular, para sugerir que um Derivado é oficial ou endossado pelo Titular.
+
+## 6. Componentes de Terceiros
+
+Cada Componente de Terceiros segue a licença do seu autor (ver `LICENCAS_TERCEIROS.md`); nada nesta licença os altera. Vídeos de referência que Você medir com o Kit continuam sendo de quem os fez: o Kit só extrai números deles e nada deles entra em Seus Vídeos.
+
+## 7. Marcas e nomes
+
+Esta licença não concede direito sobre marcas, nomes ou logotipos do Titular, além do uso da Marca d'Água descrito na seção 3.
+
+## 8. Sem garantia
+
+O Kit é fornecido "como está", sem garantia de qualquer tipo, inclusive de comercialização, de adequação a um fim específico e de não violação de direitos de terceiros. O Titular não garante que os vídeos sejam aceitos por qualquer plataforma nem que os fatos de um roteiro estejam corretos: conferir as fontes é de quem publica.
+
+## 9. Limitação de responsabilidade
+
+Na máxima extensão permitida pela lei, o Titular não responde por danos indiretos, lucros cessantes ou perda de dados decorrentes do uso do Kit. Nada aqui limita responsabilidade que a lei não permita limitar.
+
+## 10. Vigência e violação
+
+10.1 Esta licença vale enquanto Você cumprir as condições das seções 3 e 5.
+10.2 Se Você violar a seção 3 ou a seção 5, a licença termina automaticamente.
+10.3 A licença é restabelecida se Você corrigir a violação em até 30 dias depois de avisado pelo Titular (por exemplo, republicando os vídeos com a Marca d'Água).
+10.4 Vídeos já publicados sem a Marca d'Água devem ser corrigidos ou retirados do ar.
+
+## 11. Disposições gerais
+
+11.1 Se alguma cláusula for inválida, as demais continuam em vigor.
+11.2 Esta licença é regida pela lei brasileira. Não há foro de eleição: vale a regra legal de competência.

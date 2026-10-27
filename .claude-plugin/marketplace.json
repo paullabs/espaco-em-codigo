@@ -1,0 +1,12 @@
+{
+  "name": "espaco-em-codigo",
+  "description": "Estúdio de vídeos de espaço e ciência em código",
+  "owner": { "name": "LABS" },
+  "plugins": [
+    {
+      "name": "espaco-em-codigo",
+      "source": "./",
+      "description": "Cria o projeto espaco-em-codigo na sua pasta (skill novo-projeto) e guia o vídeo do roteiro à entrega (skill novo-video): Shorts de espaço e ciência em 3D feito em código."
+    }
+  ]
+}

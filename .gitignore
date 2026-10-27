@@ -1,0 +1,35 @@
+# Segredos: nunca no git
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Dependências
+node_modules
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Saídas: se refazem por script
+estudio/**/saida/
+estudio/espaco/projetos/*/voz/
+estudio/espaco/projetos/*/voz_final/
+estudio/espaco/projetos/*/entrega/
+estudio/espaco/projetos/*/referencias/
+*.mp4
+*.mov
+*.webm
+*.wav
+*.mp3
+*.aiff
+*.m4a
+
+# Modelos e dados baixados por você (Whisper, BodyParts3D) e referências que você baixar
+estudio/modelos/
+estudio/esportes/anatomia_interna/dados/
+referencias/
+
+# Sistema
+.DS_Store

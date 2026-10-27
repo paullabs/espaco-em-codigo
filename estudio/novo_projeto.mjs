@@ -1,0 +1,63 @@
+#!/usr/bin/env node
+// Cria um projeto do espaco-em-codigo numa pasta: copia o estúdio para lá, sem sobrescrever nada.
+//   node estudio/novo_projeto.mjs [pasta-destino] [--simular]
+// Sem pasta, usa a pasta atual. Pelo plugin do Claude Code o caminho é o da instalação do plugin:
+//   node "${CLAUDE_PLUGIN_ROOT}/estudio/novo_projeto.mjs" ~/videos-de-espaco
+// Se algum arquivo do destino já existir, nada é copiado e o script lista os conflitos (código 1).
+// Não entram na cópia: .git, node_modules, as saídas (saida/, voz/, voz_final/, entrega/, referencias/), .DS_Store e, na raiz,
+// o que é só do plugin (.claude-plugin/ e skills/): a skill video-espaco vai junto em .claude/skills/, na versão do motor copiado.
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const KIT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const args = process.argv.slice(2);
+const simular = args.includes('--simular');
+const destino = path.resolve((args.find((a) => !a.startsWith('--')) || process.cwd()).replace(/^~(?=$|\/)/, process.env.HOME || '~'));
+
+const EM_QUALQUER_LUGAR = new Set(['.git', 'node_modules', 'saida', 'voz', 'voz_final', 'entrega', 'referencias', '.DS_Store']);
+const SO_NA_RAIZ = new Set(['.claude-plugin', 'skills']);
+const ignorar = (partes) => partes.some((p) => EM_QUALQUER_LUGAR.has(p)) || SO_NA_RAIZ.has(partes[0]);
+
+if (destino === KIT || destino.startsWith(KIT + path.sep)) {
+  console.error(`O destino (${destino}) está dentro do próprio plugin.\nUse uma pasta nova para os seus vídeos (por exemplo ~/videos-de-espaco) e rode de lá.`);
+  process.exit(2);
+}
+
+const arquivos = [];
+(function andar(dir, partes) {
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = [...partes, e.name];
+    if (ignorar(p) || e.isSymbolicLink()) continue;
+    if (e.isDirectory()) andar(path.join(dir, e.name), p);
+    else if (e.isFile()) arquivos.push(p);
+  }
+})(KIT, []);
+arquivos.sort((a, b) => a.join('/').localeCompare(b.join('/')));
+
+const conflitos = arquivos.filter((p) => {
+  try { fs.lstatSync(path.join(destino, ...p)); return true; } catch { return false; }
+});
+if (conflitos.length) {
+  console.error(`Nada foi copiado: ${conflitos.length} arquivo(s) já existem em ${destino}:`);
+  for (const p of conflitos.slice(0, 10)) console.error(`  ${p.join('/')}`);
+  if (conflitos.length > 10) console.error(`  ... e mais ${conflitos.length - 10}`);
+  console.error('Use uma pasta vazia (ou sem estes nomes). O script nunca sobrescreve.');
+  process.exit(1);
+}
+
+if (!simular) {
+  for (const p of arquivos) {
+    const para = path.join(destino, ...p);
+    fs.mkdirSync(path.dirname(para), { recursive: true });
+    fs.copyFileSync(path.join(KIT, ...p), para, fs.constants.COPYFILE_EXCL);
+  }
+}
+console.log(`${simular ? '[simulação] copiaria' : 'Copiei'} ${arquivos.length} arquivos para ${destino}`);
+console.log([
+  'Próximos passos, nessa pasta:',
+  '  npm run instalar                     (uma vez: baixa o three.js e o Playwright)',
+  '  npm run doctor                       (confere o computador)',
+  '  npm run video -- rascunho exemplo_lua  (o exemplo "E se a Lua sumisse?" em uns 30 s)',
+  'Depois edite perfil/perfil_da_casa.md e abra o Claude Code nesta pasta para pedir o seu vídeo (ou /espaco-em-codigo:novo-video).',
+].join('\n'));

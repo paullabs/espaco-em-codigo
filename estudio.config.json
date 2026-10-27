@@ -1,0 +1,11 @@
+{
+  "chrome": null,
+  "ffmpeg": "ffmpeg",
+  "ffprobe": "ffprobe",
+  "gpu": "auto",
+  "canal": {
+    "nome": "LABS",
+    "url": "https://www.youtube.com/channel/UC71-YIjjuj6TeVj_cRqQMGQ",
+    "texto": "Inscreva-se no canal"
+  }
+}

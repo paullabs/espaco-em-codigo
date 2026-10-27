@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Espaço e ciência</title>
+<link rel="icon" href="data:,">
+<style>
+@font-face{font-family:'Outfit';src:url(fontes/Outfit.ttf);font-weight:100 900}
+@font-face{font-family:'Space Grotesk';src:url(fontes/SpaceGrotesk-Medium.otf);font-weight:500}
+@font-face{font-family:'Space Grotesk';src:url(fontes/SpaceGrotesk-Bold.otf);font-weight:700}
+html,body{margin:0;background:#000;overflow:hidden}
+#quadro{position:relative;transform-origin:0 0}
+canvas{display:block}
+#texto{position:absolute;inset:0;pointer-events:none}
+#vinheta{display:none}
+</style>
+<script type="importmap">{"imports":{"three":"/motor3d/node_modules/three/build/three.module.js"}}</script>
+</head>
+<body>
+<div id="quadro"><canvas id="c"></canvas><div id="vinheta"></div><div id="texto"></div></div>
+<script type="module">
+import * as THREE from 'three';
+import { criarUI } from './ui.js';
+import { Pos } from './pos.js';
+import { criarComp } from './composicao.js';
+
+THREE.ColorManagement.enabled = false;
+const q = new URLSearchParams(location.search);
+const cena = q.get('cena') || 'sol';
+const W = +(q.get('w') || 1920), H = +(q.get('h') || 1080);
+document.getElementById('quadro').style.width = W + 'px';
+document.getElementById('quadro').style.height = H + 'px';
+
+try {
+  await document.fonts.load("800 40px Outfit"); await document.fonts.load("700 20px 'Space Grotesk'"); await document.fonts.load("500 20px 'Space Grotesk'");
+  const canvas = document.getElementById('c');
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
+  renderer.outputColorSpace = THREE.LinearSRGBColorSpace; // sem conversão: a cor do design é a cor da tela
+  renderer.setPixelRatio(1);
+  renderer.setSize(W, H, false);
+  canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+  renderer.setClearColor(0x000000, 1);
+  const pos = new Pos(renderer, W, H);
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(30, W / H, 0.1, 400);
+  const ui = criarUI(document.getElementById('texto'), W, H);
+  const comp = criarComp(camera, W, H);
+  const mod = await import(`./cenas/${cena}.js`);
+  const c = mod.montar({ THREE, renderer, scene, camera, ui, comp, W, H });
+  const desenhar = (t) => { comp.limpar(); const lente = c.desenhar(t) || {}; pos.renderizar(scene, camera, lente, t); if (c.aposRender) c.aposRender(canvas, lente); window.__textos = ui.total(); window.__aud = comp.auditar(document.getElementById('texto')); window.__lente = lente.mm ? `${Math.round(lente.mm)}mm f/${lente.f.toFixed(1)}` : ''; };
+  window.__desenhar = desenhar;
+  window.__dur = c.duracao || 0;
+  desenhar(+(q.get('t') || 0));
+  window.__pronto = true;
+} catch (e) {
+  window.__erro = String(e.stack || e);
+  console.error(window.__erro);
+}
+</script>
+</body>
+</html>

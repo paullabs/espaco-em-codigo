@@ -1,0 +1,540 @@
+{
+ "titulo": "E se a Lua sumisse?",
+ "total": 17.401,
+ "linhas": [
+  {
+   "id": "A1",
+   "texto": "E se a Lua sumisse agora?",
+   "t0": 0.25,
+   "t1": 1.735,
+   "dur": 1.485,
+   "pausa": 0.25,
+   "arquivo": "voz/A1.wav",
+   "pedacos": [
+    {
+     "texto": "E se a Lua",
+     "bruto": "E se a *Lua*",
+     "ouro": [
+      "Lua"
+     ],
+     "ver": [
+      "lua"
+     ],
+     "t0": 0.25,
+     "t1": 0.876,
+     "palavras": [
+      {
+       "t": "E",
+       "t0": 0.25,
+       "t1": 0.571
+      },
+      {
+       "t": "se",
+       "t0": 0.571,
+       "t1": 0.631
+      },
+      {
+       "t": "a",
+       "t0": 0.631,
+       "t1": 0.691
+      },
+      {
+       "t": "Lua",
+       "t0": 0.691,
+       "t1": 0.876
+      }
+     ]
+    },
+    {
+     "texto": "sumisse agora?",
+     "bruto": "sumisse agora?",
+     "ouro": [],
+     "ver": [
+      "terra",
+      "sumiu"
+     ],
+     "t0": 0.876,
+     "t1": 1.735,
+     "palavras": [
+      {
+       "t": "sumisse",
+       "t0": 0.876,
+       "t1": 1.41
+      },
+      {
+       "t": "agora?",
+       "t0": 1.41,
+       "t1": 1.735
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "texto": "A primeira coisa: a noite ia ficar bem mais escura.",
+   "t0": 1.985,
+   "t1": 5.412,
+   "dur": 3.427,
+   "pausa": 0.35,
+   "arquivo": "voz/A2.wav",
+   "pedacos": [
+    {
+     "texto": "A primeira coisa:",
+     "bruto": "A primeira coisa:",
+     "ouro": [],
+     "ver": [
+      "terra"
+     ],
+     "t0": 1.985,
+     "t1": 3.125,
+     "palavras": [
+      {
+       "t": "A",
+       "t0": 1.985,
+       "t1": 2.243
+      },
+      {
+       "t": "primeira",
+       "t0": 2.243,
+       "t1": 2.661
+      },
+      {
+       "t": "coisa:",
+       "t0": 2.661,
+       "t1": 3.125
+      }
+     ]
+    },
+    {
+     "texto": "a noite ia ficar",
+     "bruto": "a noite ia ficar",
+     "ouro": [],
+     "ver": [
+      "terra"
+     ],
+     "t0": 3.125,
+     "t1": 4.39,
+     "palavras": [
+      {
+       "t": "a",
+       "t0": 3.125,
+       "t1": 3.508
+      },
+      {
+       "t": "noite",
+       "t0": 3.508,
+       "t1": 3.891
+      },
+      {
+       "t": "ia",
+       "t0": 3.891,
+       "t1": 4.042
+      },
+      {
+       "t": "ficar",
+       "t0": 4.042,
+       "t1": 4.39
+      }
+     ]
+    },
+    {
+     "texto": "bem mais escura.",
+     "bruto": "bem mais *escura*.",
+     "ouro": [
+      "escura"
+     ],
+     "ver": [
+      "terra"
+     ],
+     "t0": 4.39,
+     "t1": 5.412,
+     "palavras": [
+      {
+       "t": "bem",
+       "t0": 4.39,
+       "t1": 4.68
+      },
+      {
+       "t": "mais",
+       "t0": 4.68,
+       "t1": 5.098
+      },
+      {
+       "t": "escura.",
+       "t0": 5.098,
+       "t1": 5.412
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B1",
+   "texto": "Mas o pior acontece no mar.",
+   "t0": 5.762,
+   "t1": 7.467,
+   "dur": 1.706,
+   "pausa": 0.3,
+   "arquivo": "voz/B1.wav",
+   "pedacos": [
+    {
+     "texto": "Mas o pior",
+     "bruto": "Mas o pior",
+     "ouro": [],
+     "ver": [
+      "terra"
+     ],
+     "t0": 5.762,
+     "t1": 6.504,
+     "palavras": [
+      {
+       "t": "Mas",
+       "t0": 5.762,
+       "t1": 6.165
+      },
+      {
+       "t": "o",
+       "t0": 6.165,
+       "t1": 6.225
+      },
+      {
+       "t": "pior",
+       "t0": 6.225,
+       "t1": 6.504
+      }
+     ]
+    },
+    {
+     "texto": "acontece no mar.",
+     "bruto": "acontece no *mar*.",
+     "ouro": [
+      "mar"
+     ],
+     "ver": [
+      "mar"
+     ],
+     "t0": 6.504,
+     "t1": 7.467,
+     "palavras": [
+      {
+       "t": "acontece",
+       "t0": 6.504,
+       "t1": 7.201
+      },
+      {
+       "t": "no",
+       "t0": 7.201,
+       "t1": 7.328
+      },
+      {
+       "t": "mar.",
+       "t0": 7.328,
+       "t1": 7.467
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B2",
+   "texto": "Hoje a Lua puxa a água da Terra e faz a maré.",
+   "t0": 7.767,
+   "t1": 10.472,
+   "dur": 2.704,
+   "pausa": 0.3,
+   "arquivo": "voz/B2.wav",
+   "pedacos": [
+    {
+     "texto": "Hoje a Lua puxa",
+     "bruto": "Hoje a Lua puxa",
+     "ouro": [],
+     "ver": [
+      "lua",
+      "mar"
+     ],
+     "t0": 7.767,
+     "t1": 8.895,
+     "palavras": [
+      {
+       "t": "Hoje",
+       "t0": 7.767,
+       "t1": 8.175
+      },
+      {
+       "t": "a",
+       "t0": 8.175,
+       "t1": 8.302
+      },
+      {
+       "t": "Lua",
+       "t0": 8.302,
+       "t1": 8.488
+      },
+      {
+       "t": "puxa",
+       "t0": 8.488,
+       "t1": 8.895
+      }
+     ]
+    },
+    {
+     "texto": "a água da Terra",
+     "bruto": "a água da Terra",
+     "ouro": [],
+     "ver": [
+      "mar",
+      "terra"
+     ],
+     "t0": 8.895,
+     "t1": 9.742,
+     "palavras": [
+      {
+       "t": "a",
+       "t0": 8.895,
+       "t1": 8.987
+      },
+      {
+       "t": "água",
+       "t0": 8.987,
+       "t1": 9.289
+      },
+      {
+       "t": "da",
+       "t0": 9.289,
+       "t1": 9.382
+      },
+      {
+       "t": "Terra",
+       "t0": 9.382,
+       "t1": 9.742
+      }
+     ]
+    },
+    {
+     "texto": "e faz a maré.",
+     "bruto": "e faz a *maré*.",
+     "ouro": [
+      "maré"
+     ],
+     "ver": [
+      "mar"
+     ],
+     "t0": 9.742,
+     "t1": 10.472,
+     "palavras": [
+      {
+       "t": "e",
+       "t0": 9.742,
+       "t1": 9.835
+      },
+      {
+       "t": "faz",
+       "t0": 9.835,
+       "t1": 10.191
+      },
+      {
+       "t": "a",
+       "t0": 10.191,
+       "t1": 10.251
+      },
+      {
+       "t": "maré.",
+       "t0": 10.251,
+       "t1": 10.472
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B3",
+   "texto": "Sem ela, sobrava só a maré do Sol, menos da metade.",
+   "t0": 10.772,
+   "t1": 14.564,
+   "dur": 3.792,
+   "pausa": 0.35,
+   "arquivo": "voz/B3.wav",
+   "pedacos": [
+    {
+     "texto": "Sem ela,",
+     "bruto": "Sem ela,",
+     "ouro": [],
+     "ver": [
+      "terra"
+     ],
+     "t0": 10.772,
+     "t1": 11.464,
+     "palavras": [
+      {
+       "t": "Sem",
+       "t0": 10.772,
+       "t1": 11.117
+      },
+      {
+       "t": "ela,",
+       "t0": 11.117,
+       "t1": 11.464
+      }
+     ]
+    },
+    {
+     "texto": "sobrava só",
+     "bruto": "sobrava só",
+     "ouro": [],
+     "ver": [
+      "sol",
+      "marSol"
+     ],
+     "t0": 11.464,
+     "t1": 12.556,
+     "palavras": [
+      {
+       "t": "sobrava",
+       "t0": 11.464,
+       "t1": 12.324
+      },
+      {
+       "t": "só",
+       "t0": 12.324,
+       "t1": 12.556
+      }
+     ]
+    },
+    {
+     "texto": "a maré do Sol,",
+     "bruto": "a maré do *Sol*,",
+     "ouro": [
+      "Sol"
+     ],
+     "ver": [
+      "sol",
+      "marSol"
+     ],
+     "t0": 12.556,
+     "t1": 13.322,
+     "palavras": [
+      {
+       "t": "a",
+       "t0": 12.556,
+       "t1": 12.707
+      },
+      {
+       "t": "maré",
+       "t0": 12.707,
+       "t1": 12.916
+      },
+      {
+       "t": "do",
+       "t0": 12.916,
+       "t1": 13.067
+      },
+      {
+       "t": "Sol,",
+       "t0": 13.067,
+       "t1": 13.322
+      }
+     ]
+    },
+    {
+     "texto": "menos da metade.",
+     "bruto": "menos da *metade*.",
+     "ouro": [
+      "metade"
+     ],
+     "ver": [
+      "marSol"
+     ],
+     "t0": 13.322,
+     "t1": 14.564,
+     "palavras": [
+      {
+       "t": "menos",
+       "t0": 13.322,
+       "t1": 14.019
+      },
+      {
+       "t": "da",
+       "t0": 14.019,
+       "t1": 14.088
+      },
+      {
+       "t": "metade.",
+       "t0": 14.088,
+       "t1": 14.564
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "Q1",
+   "texto": "E você, ia sentir falta dela?",
+   "t0": 14.914,
+   "t1": 17.201,
+   "dur": 2.286,
+   "pausa": 0.2,
+   "arquivo": "voz/Q1.wav",
+   "pedacos": [
+    {
+     "texto": "E você,",
+     "bruto": "E você,",
+     "ouro": [],
+     "ver": [
+      "terra"
+     ],
+     "t0": 14.914,
+     "t1": 15.494,
+     "palavras": [
+      {
+       "t": "E",
+       "t0": 14.914,
+       "t1": 15.434
+      },
+      {
+       "t": "você,",
+       "t0": 15.434,
+       "t1": 15.494
+      }
+     ]
+    },
+    {
+     "texto": "ia sentir falta dela?",
+     "bruto": "ia sentir *falta* dela?",
+     "ouro": [
+      "falta"
+     ],
+     "ver": [
+      "terra",
+      "orbitaLua"
+     ],
+     "t0": 15.494,
+     "t1": 17.201,
+     "palavras": [
+      {
+       "t": "ia",
+       "t0": 15.494,
+       "t1": 15.97
+      },
+      {
+       "t": "sentir",
+       "t0": 15.97,
+       "t1": 16.458
+      },
+      {
+       "t": "falta",
+       "t0": 16.458,
+       "t1": 16.91
+      },
+      {
+       "t": "dela?",
+       "t0": 16.91,
+       "t1": 17.201
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "voz": "guia"
+}

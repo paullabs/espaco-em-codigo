@@ -1,0 +1,122 @@
+{
+ "titulo": "E se a Lua sumisse? (as marés)",
+ "pergunta_mae": "E se a Lua sumisse agora?",
+ "fontes": [
+  "A maré vem da diferença do puxão da Lua em cada ponto da Terra (força de maré): mais forte no lado perto, mais fraca no lado longe. Quem move a água é a parte do puxão que corre ao longo da superfície, que leva a água para os dois pontos alinhados com a Lua.",
+  "O efeito do Sol é cerca de 46% do efeito da Lua (então a Lua responde por uns 69% do total).",
+  "A maré alta vem a cada 12 h 25 min na maior parte das praias; há lugares com uma maré por dia (diurna) e lugares mistos. O desenho de dois bojos que seguem a Lua é um modelo de equilíbrio: a maré de cada porto depende da forma do oceano. O bojo está bem exagerado no vídeo (o real, no mar aberto, é de cerca de meio metro).",
+  "A noite de lua cheia é centenas de vezes mais clara do que a de céu só com estrelas."
+ ],
+ "voz_guia": {
+  "mac": "Luciana",
+  "taxa": 190
+ },
+ "falas": [
+  {
+   "id": "A1",
+   "pausa": 0.3,
+   "pedacos": [
+    "E se a *Lua*|lua,terra",
+    "sumisse agora?|lua,terra"
+   ]
+  },
+  {
+   "id": "A2",
+   "pausa": 0.3,
+   "pedacos": [
+    "De noite,|lua,terra",
+    "é ela que ilumina|luzLua,lua",
+    "o *mar*.|luzLua,agua"
+   ]
+  },
+  {
+   "id": "A3",
+   "pausa": 0.5,
+   "pedacos": [
+    "Sem ela,|terra,agua",
+    "ia ficar|terra,agua",
+    "bem mais *escuro*.|terra,agua"
+   ]
+  },
+  {
+   "id": "B1",
+   "pausa": 0.4,
+   "pedacos": [
+    "Mas o pior|agua,lua",
+    "acontece *no mar*.|agua,lua"
+   ]
+  },
+  {
+   "id": "B2",
+   "pausa": 0.25,
+   "pedacos": [
+    "A Lua puxa|lua,puxaoCentro",
+    "a Terra *inteira*,|puxaoCentro,terra",
+    "mas puxa mais forte|puxaoPerto",
+    "o lado de *cá*|puxaoPerto"
+   ]
+  },
+  {
+   "id": "B3",
+   "pausa": 0.35,
+   "pedacos": [
+    "e mais fraco|puxaoLonge",
+    "o lado de *lá*.|puxaoLonge"
+   ]
+  },
+  {
+   "id": "B4",
+   "pausa": 0.3,
+   "pedacos": [
+    "Por isso a água|agua",
+    "se *estica*|agua",
+    "dos dois lados.|agua",
+    "Aqui, bem exagerado.|agua"
+   ]
+  },
+  {
+   "id": "B5",
+   "pausa": 0.3,
+   "pedacos": [
+    "E a Terra gira, e leva|terra",
+    "esta praia|pino",
+    "por baixo dessas duas *ondas*.|agua,pino"
+   ]
+  },
+  {
+   "id": "B6",
+   "pausa": 0.35,
+   "pedacos": [
+    "Cada praia vê|pino",
+    "o mar subir|pino,grafico",
+    "*duas vezes* por dia.|pino,grafico"
+   ]
+  },
+  {
+   "id": "C1",
+   "pausa": 0.3,
+   "pedacos": [
+    "O *Sol* também puxa,|sol,agua",
+    "mas com menos|agua",
+    "da metade da força.|agua,sol"
+   ]
+  },
+  {
+   "id": "C2",
+   "pausa": 0.35,
+   "pedacos": [
+    "Sem a Lua,|agua",
+    "sobra só|agua",
+    "a maré do *Sol*.|agua,sol"
+   ]
+  },
+  {
+   "id": "Q1",
+   "pausa": 0.2,
+   "pedacos": [
+    "E você,|terra",
+    "ia sentir *falta* dela?|terra"
+   ]
+  }
+ ]
+}

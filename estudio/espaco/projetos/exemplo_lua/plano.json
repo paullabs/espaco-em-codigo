@@ -1,0 +1,486 @@
+{
+ "titulo": "E se a Lua sumisse?",
+ "cauda": 1.7,
+ "objetos": {
+  "terra": {
+   "corpo": "terra",
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "raio": 1,
+   "girar": 0.05
+  },
+  "lua": {
+   "corpo": "lua",
+   "raio": 0.27,
+   "orbita": {
+    "em": "terra",
+    "raio": 3.4,
+    "periodo": 90,
+    "fase": 0.1,
+    "inclinacao": 6
+   },
+   "marcador": true,
+   "mostrar": [
+    [
+     "inicio",
+     "A1:sumisse+0.15"
+    ],
+    [
+     "B2-0.25",
+     "B3:sem"
+    ]
+   ]
+  },
+  "orbitaLua": {
+   "tipo": "orbita",
+   "em": "terra",
+   "raio": 3.4,
+   "inclinacao": 6,
+   "tracejada": true,
+   "aparece": "A1.fim",
+   "fundo": true
+  },
+  "sol": {
+   "corpo": "estrelaG",
+   "pos": [
+    -48,
+    5,
+    -26
+   ],
+   "raio": 5,
+   "halo": 5,
+   "marcador": true
+  },
+  "mar": {
+   "tipo": "casca",
+   "em": "terra",
+   "raio": 1.04,
+   "aponta": "lua",
+   "esticar": 1.14,
+   "cor": "#7fe8ff",
+   "opacidade": 0.5,
+   "mostrar": [
+    [
+     "B1.2",
+     "B3:sem"
+    ]
+   ]
+  },
+  "marSol": {
+   "tipo": "casca",
+   "em": "terra",
+   "raio": 1.04,
+   "aponta": "sol",
+   "esticar": 1.14,
+   "cor": "#7fe8ff",
+   "opacidade": 0.5,
+   "aparece": "B3:sem",
+   "entra": "direto",
+   "esticar_ao_longo": [
+    {
+     "de": "B3.4",
+     "ate": "B3.fim",
+     "para": 1.05,
+     "curva": "suave"
+    }
+   ]
+  }
+ },
+ "planos": [
+  {
+   "de": "inicio",
+   "novo": "a Lua grande na frente, bem de perto",
+   "heroi": "lua",
+   "macro": true,
+   "compo": {
+    "x": 0.42,
+    "y": 0.36
+   },
+   "camera": {
+    "de": {
+     "alvo": "lua",
+     "az": 66,
+     "el": 5,
+     "dist": 1.4,
+     "mm": 24
+    },
+    "para": {
+     "az": 63,
+     "dist": 1.25
+    },
+    "curva": "meio"
+   }
+  },
+  {
+   "de": "A1:sumisse",
+   "novo": "a Lua some num clarão logo abaixo da Terra (passa pela legenda de propósito, por 0,3 s); a Terra fica sozinha",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "terra"
+     ],
+     "az": 40,
+     "el": 8
+    },
+    "para": {
+     "az": 34,
+     "ocupa": 0.44
+    },
+    "curva": "chega"
+   },
+   "faixa": false
+  },
+  {
+   "de": "A2",
+   "novo": "a órbita vazia, vista do alto",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "orbitaLua"
+     ],
+     "ocupa": 0.62,
+     "az": 10,
+     "el": 34
+    },
+    "para": {
+     "az": 2,
+     "el": 30
+    }
+   }
+  },
+  {
+   "de": "A2.2",
+   "novo": "a linha entre o dia e a noite",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "terra"
+     ],
+     "az": -30,
+     "el": 6,
+     "mm": 50
+    },
+    "para": {
+     "az": -22,
+     "ocupa": 0.44
+    },
+    "curva": "meio"
+   }
+  },
+  {
+   "de": "A2.3",
+   "novo": "o lado da noite, com as luzes das cidades",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "terra"
+     ],
+     "az": 40,
+     "el": 4,
+     "mm": 50
+    },
+    "para": {
+     "az": 48,
+     "ocupa": 0.42
+    },
+    "curva": "chega"
+   }
+  },
+  {
+   "de": "B1",
+   "novo": "gancho: a câmera vem de cima para o oceano",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "terra"
+     ],
+     "az": -60,
+     "el": 48,
+     "ocupa": 0.38
+    },
+    "para": {
+     "el": 40,
+     "ocupa": 0.44
+    },
+    "curva": "parte"
+   }
+  },
+  {
+   "de": "B1.2",
+   "novo": "aparece a água em volta da Terra",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "terra"
+     ],
+     "az": -22,
+     "el": 12
+    },
+    "para": {
+     "az": -14,
+     "ocupa": 0.44
+    },
+    "curva": "chega"
+   }
+  },
+  {
+   "de": "B2",
+   "novo": "a Lua volta (rebobina) e uma luz sai dela até a Terra",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "terra",
+      "lua"
+     ],
+     "ocupa": 0.62,
+     "az": -45,
+     "el": 24
+    },
+    "para": {
+     "az": -38,
+     "el": 22
+    }
+   }
+  },
+  {
+   "de": "B2.2",
+   "novo": "a água da Terra de perto, esticada para o lado da Lua",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "terra"
+     ],
+     "az": -58,
+     "el": 30
+    },
+    "para": {
+     "az": -50,
+     "ocupa": 0.44
+    },
+    "curva": "chega"
+   }
+  },
+  {
+   "de": "B2.3",
+   "novo": "de outro ângulo: a maré apontando para a Lua",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "terra",
+      "lua"
+     ],
+     "ocupa": 0.56,
+     "az": -120,
+     "el": 14
+    },
+    "para": {
+     "az": -112
+    }
+   }
+  },
+  {
+   "de": "B3",
+   "novo": "perto da Lua, com a Terra atrás: a Lua some de novo",
+   "heroi": "lua",
+   "camera": {
+    "de": {
+     "alvo": "lua",
+     "az": 34,
+     "el": 6,
+     "dist": 2.4,
+     "mm": 35
+    },
+    "para": {
+     "az": 30,
+     "dist": 2.2
+    },
+    "curva": "chega"
+   },
+   "macro": false
+  },
+  {
+   "de": "B3.2",
+   "novo": "o Sol lá longe e a Terra",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "pos": [
+      8.6,
+      2.4,
+      7.4
+     ],
+     "alvo": [
+      -9,
+      -1.6,
+      -5
+     ],
+     "mm": 28
+    },
+    "para": {
+     "pos": [
+      8.0,
+      2.3,
+      6.9
+     ]
+    },
+    "curva": "meio"
+   }
+  },
+  {
+   "de": "B3.3",
+   "novo": "contra o Sol: a Terra escura na frente e o Sol ao lado, puxando a água",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "terra"
+     ],
+     "ocupa": 0.3,
+     "az": 72,
+     "el": 4,
+     "mm": 24
+    },
+    "para": {
+     "az": 76
+    }
+   },
+   "compo": {
+    "x": 0.5,
+    "y": 0.36
+   }
+  },
+  {
+   "de": "B3.4",
+   "novo": "a água encolhe: menos da metade",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "terra"
+     ],
+     "az": -150,
+     "el": 26
+    },
+    "para": {
+     "az": -142,
+     "ocupa": 0.44
+    },
+    "curva": "chega"
+   }
+  },
+  {
+   "de": "Q1",
+   "novo": "a Terra sozinha com a órbita vazia",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "orbitaLua"
+     ],
+     "ocupa": 0.56,
+     "az": 30,
+     "el": 20
+    },
+    "para": {
+     "az": 24,
+     "ocupa": 0.6
+    },
+    "curva": "meio"
+   }
+  },
+  {
+   "de": "Q1:sentir",
+   "novo": "a câmera continua chegando na Terra (não acaba)",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "terra"
+     ],
+     "ocupa": 0.36,
+     "az": 20,
+     "el": 16
+    },
+    "para": {
+     "az": 4,
+     "el": 12,
+     "ocupa": 0.42
+    },
+    "curva": "meio"
+   }
+  }
+ ],
+ "eventos": [
+  {
+   "tipo": "clarao",
+   "em": "A1:sumisse",
+   "alvo": "lua",
+   "forca": 0.28,
+   "cor": "azul"
+  },
+  {
+   "tipo": "onda",
+   "em": "A1:sumisse",
+   "alvo": "lua",
+   "raio": 1.2,
+   "dur": 1.1,
+   "cor": "#cfe6ff",
+   "nome": "sumiu"
+  },
+  {
+   "tipo": "rebobinar",
+   "em": "B1.fim+0.05",
+   "ate": "B2+0.3"
+  },
+  {
+   "tipo": "pulso",
+   "nome": "puxa",
+   "em": "B2:puxa",
+   "ate": "B2.2",
+   "de": "lua",
+   "para": "terra",
+   "cor": "#bff4ff",
+   "tamanho": 0.3
+  },
+  {
+   "tipo": "clarao",
+   "em": "B3:sem",
+   "alvo": "lua",
+   "forca": 0.22,
+   "cor": "azul"
+  },
+  {
+   "tipo": "som",
+   "em": "A1:sumisse",
+   "nota": "plim"
+  },
+  {
+   "tipo": "som",
+   "em": "B1:mar",
+   "nota": "plim"
+  },
+  {
+   "tipo": "som",
+   "em": "B3:sem",
+   "nota": "grave"
+  },
+  {
+   "tipo": "som",
+   "em": "Q1",
+   "nota": "plim"
+  }
+ ],
+ "estilo": "vivo"
+}

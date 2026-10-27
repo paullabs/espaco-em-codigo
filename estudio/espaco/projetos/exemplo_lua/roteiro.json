@@ -1,0 +1,66 @@
+{
+ "titulo": "E se a Lua sumisse?",
+ "pergunta_mae": "E se a Lua sumisse agora?",
+ "fontes": [
+  "A maré que o Sol faz é cerca de 46% da maré que a Lua faz (força de maré proporcional à massa dividida pelo cubo da distância).",
+  "A Lua cheia ilumina a noite; sem ela, sobra a luz das estrelas."
+ ],
+ "voz_guia": {
+  "mac": "Luciana",
+  "taxa": 190
+ },
+ "falas": [
+  {
+   "id": "A1",
+   "pausa": 0.25,
+   "pedacos": [
+    "E se a *Lua*|lua",
+    "sumisse agora?|terra,sumiu"
+   ]
+  },
+  {
+   "id": "A2",
+   "pausa": 0.35,
+   "pedacos": [
+    "A primeira coisa:|terra",
+    "a noite ia ficar|terra",
+    "bem mais *escura*.|terra"
+   ]
+  },
+  {
+   "id": "B1",
+   "pausa": 0.3,
+   "pedacos": [
+    "Mas o pior|terra",
+    "acontece no *mar*.|mar"
+   ]
+  },
+  {
+   "id": "B2",
+   "pausa": 0.3,
+   "pedacos": [
+    "Hoje a Lua puxa|lua,mar",
+    "a água da Terra|mar,terra",
+    "e faz a *maré*.|mar"
+   ]
+  },
+  {
+   "id": "B3",
+   "pausa": 0.35,
+   "pedacos": [
+    "Sem ela,|terra",
+    "sobrava só|sol,marSol",
+    "a maré do *Sol*,|sol,marSol",
+    "menos da *metade*.|marSol"
+   ]
+  },
+  {
+   "id": "Q1",
+   "pausa": 0.2,
+   "pedacos": [
+    "E você,|terra",
+    "ia sentir *falta* dela?|terra,orbitaLua"
+   ]
+  }
+ ]
+}

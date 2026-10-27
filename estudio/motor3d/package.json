@@ -1,0 +1,11 @@
+{
+  "name": "motor3d-estudio",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Motor 3D em codigo do estudio: cenas Three.js renderizadas quadro a quadro",
+  "type": "module",
+  "dependencies": {
+    "three": "0.160.0",
+    "playwright-core": "1.49.1"
+  }
+}

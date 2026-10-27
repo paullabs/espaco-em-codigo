@@ -1,0 +1,1136 @@
+{
+ "titulo": "E se a Lua sumisse? (as marés)",
+ "total": 37.193,
+ "linhas": [
+  {
+   "id": "A1",
+   "texto": "E se a Lua sumisse agora?",
+   "t0": 0.25,
+   "t1": 1.735,
+   "dur": 1.485,
+   "pausa": 0.3,
+   "arquivo": "voz/A1.wav",
+   "pedacos": [
+    {
+     "texto": "E se a Lua",
+     "bruto": "E se a *Lua*",
+     "ouro": [
+      "Lua"
+     ],
+     "ver": [
+      "lua",
+      "terra"
+     ],
+     "t0": 0.25,
+     "t1": 0.876,
+     "palavras": [
+      {
+       "t": "E",
+       "t0": 0.25,
+       "t1": 0.571
+      },
+      {
+       "t": "se",
+       "t0": 0.571,
+       "t1": 0.631
+      },
+      {
+       "t": "a",
+       "t0": 0.631,
+       "t1": 0.691
+      },
+      {
+       "t": "Lua",
+       "t0": 0.691,
+       "t1": 0.876
+      }
+     ]
+    },
+    {
+     "texto": "sumisse agora?",
+     "bruto": "sumisse agora?",
+     "ouro": [],
+     "ver": [
+      "lua",
+      "terra"
+     ],
+     "t0": 0.876,
+     "t1": 1.735,
+     "palavras": [
+      {
+       "t": "sumisse",
+       "t0": 0.876,
+       "t1": 1.41
+      },
+      {
+       "t": "agora?",
+       "t0": 1.41,
+       "t1": 1.735
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "texto": "De noite, é ela que ilumina o mar.",
+   "t0": 2.035,
+   "t1": 4.208,
+   "dur": 2.172,
+   "pausa": 0.3,
+   "arquivo": "voz/A2.wav",
+   "pedacos": [
+    {
+     "texto": "De noite,",
+     "bruto": "De noite,",
+     "ouro": [],
+     "ver": [
+      "lua",
+      "terra"
+     ],
+     "t0": 2.035,
+     "t1": 2.78,
+     "palavras": [
+      {
+       "t": "De",
+       "t0": 2.035,
+       "t1": 2.339
+      },
+      {
+       "t": "noite,",
+       "t0": 2.339,
+       "t1": 2.78
+      }
+     ]
+    },
+    {
+     "texto": "é ela que ilumina",
+     "bruto": "é ela que ilumina",
+     "ouro": [],
+     "ver": [
+      "luzLua",
+      "lua"
+     ],
+     "t0": 2.78,
+     "t1": 4.033,
+     "palavras": [
+      {
+       "t": "é",
+       "t0": 2.78,
+       "t1": 3.128
+      },
+      {
+       "t": "ela",
+       "t0": 3.128,
+       "t1": 3.418
+      },
+      {
+       "t": "que",
+       "t0": 3.418,
+       "t1": 3.569
+      },
+      {
+       "t": "ilumina",
+       "t0": 3.569,
+       "t1": 4.033
+      }
+     ]
+    },
+    {
+     "texto": "o mar.",
+     "bruto": "o *mar*.",
+     "ouro": [
+      "mar"
+     ],
+     "ver": [
+      "luzLua",
+      "agua"
+     ],
+     "t0": 4.033,
+     "t1": 4.208,
+     "palavras": [
+      {
+       "t": "o",
+       "t0": 4.033,
+       "t1": 4.115
+      },
+      {
+       "t": "mar.",
+       "t0": 4.115,
+       "t1": 4.208
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "A3",
+   "texto": "Sem ela, ia ficar bem mais escuro.",
+   "t0": 4.508,
+   "t1": 7.023,
+   "dur": 2.515,
+   "pausa": 0.5,
+   "arquivo": "voz/A3.wav",
+   "pedacos": [
+    {
+     "texto": "Sem ela,",
+     "bruto": "Sem ela,",
+     "ouro": [],
+     "ver": [
+      "terra",
+      "agua"
+     ],
+     "t0": 4.508,
+     "t1": 5.2,
+     "palavras": [
+      {
+       "t": "Sem",
+       "t0": 4.508,
+       "t1": 4.852
+      },
+      {
+       "t": "ela,",
+       "t0": 4.852,
+       "t1": 5.2
+      }
+     ]
+    },
+    {
+     "texto": "ia ficar",
+     "bruto": "ia ficar",
+     "ouro": [],
+     "ver": [
+      "terra",
+      "agua"
+     ],
+     "t0": 5.2,
+     "t1": 6.013,
+     "palavras": [
+      {
+       "t": "ia",
+       "t0": 5.2,
+       "t1": 5.641
+      },
+      {
+       "t": "ficar",
+       "t0": 5.641,
+       "t1": 6.013
+      }
+     ]
+    },
+    {
+     "texto": "bem mais escuro.",
+     "bruto": "bem mais *escuro*.",
+     "ouro": [
+      "escuro"
+     ],
+     "ver": [
+      "terra",
+      "agua"
+     ],
+     "t0": 6.013,
+     "t1": 7.023,
+     "palavras": [
+      {
+       "t": "bem",
+       "t0": 6.013,
+       "t1": 6.315
+      },
+      {
+       "t": "mais",
+       "t0": 6.315,
+       "t1": 6.721
+      },
+      {
+       "t": "escuro.",
+       "t0": 6.721,
+       "t1": 7.023
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B1",
+   "texto": "Mas o pior acontece no mar.",
+   "t0": 7.523,
+   "t1": 9.229,
+   "dur": 1.706,
+   "pausa": 0.4,
+   "arquivo": "voz/B1.wav",
+   "pedacos": [
+    {
+     "texto": "Mas o pior",
+     "bruto": "Mas o pior",
+     "ouro": [],
+     "ver": [
+      "agua",
+      "lua"
+     ],
+     "t0": 7.523,
+     "t1": 8.265,
+     "palavras": [
+      {
+       "t": "Mas",
+       "t0": 7.523,
+       "t1": 7.927
+      },
+      {
+       "t": "o",
+       "t0": 7.927,
+       "t1": 7.987
+      },
+      {
+       "t": "pior",
+       "t0": 7.987,
+       "t1": 8.265
+      }
+     ]
+    },
+    {
+     "texto": "acontece no mar.",
+     "bruto": "acontece *no mar*.",
+     "ouro": [
+      "no mar"
+     ],
+     "ver": [
+      "agua",
+      "lua"
+     ],
+     "t0": 8.265,
+     "t1": 9.229,
+     "palavras": [
+      {
+       "t": "acontece",
+       "t0": 8.265,
+       "t1": 8.962
+      },
+      {
+       "t": "no",
+       "t0": 8.962,
+       "t1": 9.089
+      },
+      {
+       "t": "mar.",
+       "t0": 9.089,
+       "t1": 9.229
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B2",
+   "texto": "A Lua puxa a Terra inteira, mas puxa mais forte o lado de cá",
+   "t0": 9.629,
+   "t1": 13.612,
+   "dur": 3.984,
+   "pausa": 0.25,
+   "arquivo": "voz/B2.wav",
+   "pedacos": [
+    {
+     "texto": "A Lua puxa",
+     "bruto": "A Lua puxa",
+     "ouro": [],
+     "ver": [
+      "lua",
+      "puxaoCentro"
+     ],
+     "t0": 9.629,
+     "t1": 10.467,
+     "palavras": [
+      {
+       "t": "A",
+       "t0": 9.629,
+       "t1": 9.886
+      },
+      {
+       "t": "Lua",
+       "t0": 9.886,
+       "t1": 10.072
+      },
+      {
+       "t": "puxa",
+       "t0": 10.072,
+       "t1": 10.467
+      }
+     ]
+    },
+    {
+     "texto": "a Terra inteira,",
+     "bruto": "a Terra *inteira*,",
+     "ouro": [
+      "inteira"
+     ],
+     "ver": [
+      "puxaoCentro",
+      "terra"
+     ],
+     "t0": 10.467,
+     "t1": 11.291,
+     "palavras": [
+      {
+       "t": "a",
+       "t0": 10.467,
+       "t1": 10.559
+      },
+      {
+       "t": "Terra",
+       "t0": 10.559,
+       "t1": 10.896
+      },
+      {
+       "t": "inteira,",
+       "t0": 10.896,
+       "t1": 11.291
+      }
+     ]
+    },
+    {
+     "texto": "mas puxa mais forte",
+     "bruto": "mas puxa mais forte",
+     "ouro": [],
+     "ver": [
+      "puxaoPerto"
+     ],
+     "t0": 11.291,
+     "t1": 12.833,
+     "palavras": [
+      {
+       "t": "mas",
+       "t0": 11.291,
+       "t1": 11.708
+      },
+      {
+       "t": "puxa",
+       "t0": 11.708,
+       "t1": 12.15
+      },
+      {
+       "t": "mais",
+       "t0": 12.15,
+       "t1": 12.544
+      },
+      {
+       "t": "forte",
+       "t0": 12.544,
+       "t1": 12.833
+      }
+     ]
+    },
+    {
+     "texto": "o lado de cá",
+     "bruto": "o lado de *cá*",
+     "ouro": [
+      "cá"
+     ],
+     "ver": [
+      "puxaoPerto"
+     ],
+     "t0": 12.833,
+     "t1": 13.612,
+     "palavras": [
+      {
+       "t": "o",
+       "t0": 12.833,
+       "t1": 12.893
+      },
+      {
+       "t": "lado",
+       "t0": 12.893,
+       "t1": 13.253
+      },
+      {
+       "t": "de",
+       "t0": 13.253,
+       "t1": 13.403
+      },
+      {
+       "t": "cá",
+       "t0": 13.403,
+       "t1": 13.612
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B3",
+   "texto": "e mais fraco o lado de lá.",
+   "t0": 13.862,
+   "t1": 15.592,
+   "dur": 1.729,
+   "pausa": 0.35,
+   "arquivo": "voz/B3.wav",
+   "pedacos": [
+    {
+     "texto": "e mais fraco",
+     "bruto": "e mais fraco",
+     "ouro": [],
+     "ver": [
+      "puxaoLonge"
+     ],
+     "t0": 13.862,
+     "t1": 14.814,
+     "palavras": [
+      {
+       "t": "e",
+       "t0": 13.862,
+       "t1": 14.119
+      },
+      {
+       "t": "mais",
+       "t0": 14.119,
+       "t1": 14.466
+      },
+      {
+       "t": "fraco",
+       "t0": 14.466,
+       "t1": 14.814
+      }
+     ]
+    },
+    {
+     "texto": "o lado de lá.",
+     "bruto": "o lado de *lá*.",
+     "ouro": [
+      "lá"
+     ],
+     "ver": [
+      "puxaoLonge"
+     ],
+     "t0": 14.814,
+     "t1": 15.592,
+     "palavras": [
+      {
+       "t": "o",
+       "t0": 14.814,
+       "t1": 14.907
+      },
+      {
+       "t": "lado",
+       "t0": 14.907,
+       "t1": 15.267
+      },
+      {
+       "t": "de",
+       "t0": 15.267,
+       "t1": 15.418
+      },
+      {
+       "t": "lá.",
+       "t0": 15.418,
+       "t1": 15.592
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B4",
+   "texto": "Por isso a água se estica dos dois lados. Aqui, bem exagerado.",
+   "t0": 15.942,
+   "t1": 20.28,
+   "dur": 4.338,
+   "pausa": 0.3,
+   "arquivo": "voz/B4.wav",
+   "pedacos": [
+    {
+     "texto": "Por isso a água",
+     "bruto": "Por isso a água",
+     "ouro": [],
+     "ver": [
+      "agua"
+     ],
+     "t0": 15.942,
+     "t1": 16.878,
+     "palavras": [
+      {
+       "t": "Por",
+       "t0": 15.942,
+       "t1": 16.174
+      },
+      {
+       "t": "isso",
+       "t0": 16.174,
+       "t1": 16.504
+      },
+      {
+       "t": "a",
+       "t0": 16.504,
+       "t1": 16.564
+      },
+      {
+       "t": "água",
+       "t0": 16.564,
+       "t1": 16.878
+      }
+     ]
+    },
+    {
+     "texto": "se estica",
+     "bruto": "se *estica*",
+     "ouro": [
+      "estica"
+     ],
+     "ver": [
+      "agua"
+     ],
+     "t0": 16.878,
+     "t1": 17.447,
+     "palavras": [
+      {
+       "t": "se",
+       "t0": 16.878,
+       "t1": 17.04
+      },
+      {
+       "t": "estica",
+       "t0": 17.04,
+       "t1": 17.447
+      }
+     ]
+    },
+    {
+     "texto": "dos dois lados.",
+     "bruto": "dos dois lados.",
+     "ouro": [],
+     "ver": [
+      "agua"
+     ],
+     "t0": 17.447,
+     "t1": 18.457,
+     "palavras": [
+      {
+       "t": "dos",
+       "t0": 17.447,
+       "t1": 17.714
+      },
+      {
+       "t": "dois",
+       "t0": 17.714,
+       "t1": 18.039
+      },
+      {
+       "t": "lados.",
+       "t0": 18.039,
+       "t1": 18.457
+      }
+     ]
+    },
+    {
+     "texto": "Aqui, bem exagerado.",
+     "bruto": "Aqui, bem exagerado.",
+     "ouro": [],
+     "ver": [
+      "agua"
+     ],
+     "t0": 18.457,
+     "t1": 20.28,
+     "palavras": [
+      {
+       "t": "Aqui,",
+       "t0": 18.457,
+       "t1": 19.049
+      },
+      {
+       "t": "bem",
+       "t0": 19.049,
+       "t1": 19.479
+      },
+      {
+       "t": "exagerado.",
+       "t0": 19.479,
+       "t1": 20.28
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B5",
+   "texto": "E a Terra gira, e leva esta praia por baixo dessas duas ondas.",
+   "t0": 20.58,
+   "t1": 24.712,
+   "dur": 4.132,
+   "pausa": 0.3,
+   "arquivo": "voz/B5.wav",
+   "pedacos": [
+    {
+     "texto": "E a Terra gira, e leva",
+     "bruto": "E a Terra gira, e leva",
+     "ouro": [],
+     "ver": [
+      "terra"
+     ],
+     "t0": 20.58,
+     "t1": 22.181,
+     "palavras": [
+      {
+       "t": "E",
+       "t0": 20.58,
+       "t1": 20.844
+      },
+      {
+       "t": "a",
+       "t0": 20.844,
+       "t1": 20.904
+      },
+      {
+       "t": "Terra",
+       "t0": 20.904,
+       "t1": 21.241
+      },
+      {
+       "t": "gira,",
+       "t0": 21.241,
+       "t1": 21.52
+      },
+      {
+       "t": "e",
+       "t0": 21.52,
+       "t1": 21.74
+      },
+      {
+       "t": "leva",
+       "t0": 21.74,
+       "t1": 22.181
+      }
+     ]
+    },
+    {
+     "texto": "esta praia",
+     "bruto": "esta praia",
+     "ouro": [],
+     "ver": [
+      "pino"
+     ],
+     "t0": 22.181,
+     "t1": 22.901,
+     "palavras": [
+      {
+       "t": "esta",
+       "t0": 22.181,
+       "t1": 22.483
+      },
+      {
+       "t": "praia",
+       "t0": 22.483,
+       "t1": 22.901
+      }
+     ]
+    },
+    {
+     "texto": "por baixo dessas duas ondas.",
+     "bruto": "por baixo dessas duas *ondas*.",
+     "ouro": [
+      "ondas"
+     ],
+     "ver": [
+      "agua",
+      "pino"
+     ],
+     "t0": 22.901,
+     "t1": 24.712,
+     "palavras": [
+      {
+       "t": "por",
+       "t0": 22.901,
+       "t1": 23.191
+      },
+      {
+       "t": "baixo",
+       "t0": 23.191,
+       "t1": 23.563
+      },
+      {
+       "t": "dessas",
+       "t0": 23.563,
+       "t1": 24.085
+      },
+      {
+       "t": "duas",
+       "t0": 24.085,
+       "t1": 24.352
+      },
+      {
+       "t": "ondas.",
+       "t0": 24.352,
+       "t1": 24.712
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B6",
+   "texto": "Cada praia vê o mar subir duas vezes por dia.",
+   "t0": 25.012,
+   "t1": 27.732,
+   "dur": 2.72,
+   "pausa": 0.35,
+   "arquivo": "voz/B6.wav",
+   "pedacos": [
+    {
+     "texto": "Cada praia vê",
+     "bruto": "Cada praia vê",
+     "ouro": [],
+     "ver": [
+      "pino"
+     ],
+     "t0": 25.012,
+     "t1": 26.014,
+     "palavras": [
+      {
+       "t": "Cada",
+       "t0": 25.012,
+       "t1": 25.464
+      },
+      {
+       "t": "praia",
+       "t0": 25.464,
+       "t1": 25.793
+      },
+      {
+       "t": "vê",
+       "t0": 25.793,
+       "t1": 26.014
+      }
+     ]
+    },
+    {
+     "texto": "o mar subir",
+     "bruto": "o mar subir",
+     "ouro": [],
+     "ver": [
+      "pino",
+      "grafico"
+     ],
+     "t0": 26.014,
+     "t1": 26.618,
+     "palavras": [
+      {
+       "t": "o",
+       "t0": 26.014,
+       "t1": 26.107
+      },
+      {
+       "t": "mar",
+       "t0": 26.107,
+       "t1": 26.246
+      },
+      {
+       "t": "subir",
+       "t0": 26.246,
+       "t1": 26.618
+      }
+     ]
+    },
+    {
+     "texto": "duas vezes por dia.",
+     "bruto": "*duas vezes* por dia.",
+     "ouro": [
+      "duas vezes"
+     ],
+     "ver": [
+      "pino",
+      "grafico"
+     ],
+     "t0": 26.618,
+     "t1": 27.732,
+     "palavras": [
+      {
+       "t": "duas",
+       "t0": 26.618,
+       "t1": 27.036
+      },
+      {
+       "t": "vezes",
+       "t0": 27.036,
+       "t1": 27.442
+      },
+      {
+       "t": "por",
+       "t0": 27.442,
+       "t1": 27.535
+      },
+      {
+       "t": "dia.",
+       "t0": 27.535,
+       "t1": 27.732
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C1",
+   "texto": "O Sol também puxa, mas com menos da metade da força.",
+   "t0": 28.082,
+   "t1": 31.704,
+   "dur": 3.622,
+   "pausa": 0.3,
+   "arquivo": "voz/C1.wav",
+   "pedacos": [
+    {
+     "texto": "O Sol também puxa,",
+     "bruto": "O *Sol* também puxa,",
+     "ouro": [
+      "Sol"
+     ],
+     "ver": [
+      "sol",
+      "agua"
+     ],
+     "t0": 28.082,
+     "t1": 29.405,
+     "palavras": [
+      {
+       "t": "O",
+       "t0": 28.082,
+       "t1": 28.36
+      },
+      {
+       "t": "Sol",
+       "t0": 28.36,
+       "t1": 28.639
+      },
+      {
+       "t": "também",
+       "t0": 28.639,
+       "t1": 29.103
+      },
+      {
+       "t": "puxa,",
+       "t0": 29.103,
+       "t1": 29.405
+      }
+     ]
+    },
+    {
+     "texto": "mas com menos",
+     "bruto": "mas com menos",
+     "ouro": [],
+     "ver": [
+      "agua"
+     ],
+     "t0": 29.405,
+     "t1": 30.531,
+     "palavras": [
+      {
+       "t": "mas",
+       "t0": 29.405,
+       "t1": 29.8
+      },
+      {
+       "t": "com",
+       "t0": 29.8,
+       "t1": 30.09
+      },
+      {
+       "t": "menos",
+       "t0": 30.09,
+       "t1": 30.531
+      }
+     ]
+    },
+    {
+     "texto": "da metade da força.",
+     "bruto": "da metade da força.",
+     "ouro": [],
+     "ver": [
+      "agua",
+      "sol"
+     ],
+     "t0": 30.531,
+     "t1": 31.704,
+     "palavras": [
+      {
+       "t": "da",
+       "t0": 30.531,
+       "t1": 30.612
+      },
+      {
+       "t": "metade",
+       "t0": 30.612,
+       "t1": 31.077
+      },
+      {
+       "t": "da",
+       "t0": 31.077,
+       "t1": 31.216
+      },
+      {
+       "t": "força.",
+       "t0": 31.216,
+       "t1": 31.704
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C2",
+   "texto": "Sem a Lua, sobra só a maré do Sol.",
+   "t0": 32.004,
+   "t1": 34.357,
+   "dur": 2.353,
+   "pausa": 0.35,
+   "arquivo": "voz/C2.wav",
+   "pedacos": [
+    {
+     "texto": "Sem a Lua,",
+     "bruto": "Sem a Lua,",
+     "ouro": [],
+     "ver": [
+      "agua"
+     ],
+     "t0": 32.004,
+     "t1": 32.696,
+     "palavras": [
+      {
+       "t": "Sem",
+       "t0": 32.004,
+       "t1": 32.348
+      },
+      {
+       "t": "a",
+       "t0": 32.348,
+       "t1": 32.511
+      },
+      {
+       "t": "Lua,",
+       "t0": 32.511,
+       "t1": 32.696
+      }
+     ]
+    },
+    {
+     "texto": "sobra só",
+     "bruto": "sobra só",
+     "ouro": [],
+     "ver": [
+      "agua"
+     ],
+     "t0": 32.696,
+     "t1": 33.59,
+     "palavras": [
+      {
+       "t": "sobra",
+       "t0": 32.696,
+       "t1": 33.37
+      },
+      {
+       "t": "só",
+       "t0": 33.37,
+       "t1": 33.59
+      }
+     ]
+    },
+    {
+     "texto": "a maré do Sol.",
+     "bruto": "a maré do *Sol*.",
+     "ouro": [
+      "Sol"
+     ],
+     "ver": [
+      "agua",
+      "sol"
+     ],
+     "t0": 33.59,
+     "t1": 34.357,
+     "palavras": [
+      {
+       "t": "a",
+       "t0": 33.59,
+       "t1": 33.73
+      },
+      {
+       "t": "maré",
+       "t0": 33.73,
+       "t1": 33.95
+      },
+      {
+       "t": "do",
+       "t0": 33.95,
+       "t1": 34.101
+      },
+      {
+       "t": "Sol.",
+       "t0": 34.101,
+       "t1": 34.357
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "Q1",
+   "texto": "E você, ia sentir falta dela?",
+   "t0": 34.707,
+   "t1": 36.993,
+   "dur": 2.286,
+   "pausa": 0.2,
+   "arquivo": "voz/Q1.wav",
+   "pedacos": [
+    {
+     "texto": "E você,",
+     "bruto": "E você,",
+     "ouro": [],
+     "ver": [
+      "terra"
+     ],
+     "t0": 34.707,
+     "t1": 35.286,
+     "palavras": [
+      {
+       "t": "E",
+       "t0": 34.707,
+       "t1": 35.226
+      },
+      {
+       "t": "você,",
+       "t0": 35.226,
+       "t1": 35.286
+      }
+     ]
+    },
+    {
+     "texto": "ia sentir falta dela?",
+     "bruto": "ia sentir *falta* dela?",
+     "ouro": [
+      "falta"
+     ],
+     "ver": [
+      "terra"
+     ],
+     "t0": 35.286,
+     "t1": 36.993,
+     "palavras": [
+      {
+       "t": "ia",
+       "t0": 35.286,
+       "t1": 35.762
+      },
+      {
+       "t": "sentir",
+       "t0": 35.762,
+       "t1": 36.25
+      },
+      {
+       "t": "falta",
+       "t0": 36.25,
+       "t1": 36.703
+      },
+      {
+       "t": "dela?",
+       "t0": 36.703,
+       "t1": 36.993
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "voz": "guia"
+}

@@ -1,0 +1,14 @@
+{
+ "titulo": "E se o Sol apagasse?",
+ "pergunta_mae": "E se o Sol apagasse agora?",
+ "fontes": [
+  "A luz do Sol leva cerca de 8 minutos e 20 segundos para chegar à Terra (150 milhões de km a 300 mil km/s)."
+ ],
+ "voz_guia": { "mac": "Luciana", "taxa": 190 },
+ "voz_final": { "id": "", "modelo": "eleven_multilingual_v2" },
+ "falas": [
+  { "id": "A1", "pausa": 0.3, "pedacos": ["E se o *Sol*|sol", "apagasse agora?|sol"] },
+  { "id": "A2", "pausa": 0.3, "pedacos": ["A Terra ia ficar|terra", "*oito minutos*|luz", "sem saber.|terra"] },
+  { "id": "Q1", "pausa": 0.2, "pedacos": ["O que você faria|terra", "nesses oito minutos?|terra"] }
+ ]
+}
