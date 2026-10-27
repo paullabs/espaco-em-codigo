@@ -36,18 +36,18 @@ Tudo aqui é **medido** na voz separada da música (pausas com erro de ~0,1 s), 
 
 | Tipo de momento | Silêncio medido | Exemplos |
 |---|---|---|
-| Piada seca ou ironia | 0,3–1,2 s, e segue | "That part was designed for nobody." 0,95 s (RV01 1:27) · "This morning, you." 0,47 s (RV04 0:52) · depois da piada, 0,45–0,56 s e corte (RV05) |
-| Soco de uma demonstração (a imagem paga a frase) | 4–8 s | "You just (0.6) catch it." + 4,4 s (RV02 0:06) · "Caught that, too." + 7,9 s (RV02 1:39) · "Lucky guess." + 3,9 s (RV03 1:06) |
-| Fecho de item ou de bloco, no rosto do herói ou de quem viu | 1,6–8 s | os seis fechos do livro-caixa de RV03, 1,56–3,24 s · "That's not humanly possible." + 6,6 s (RV02 1:08) · "I give up." + 7,8 s (RV02 3:21) |
-| Revelação da premissa | 2,5–3,7 s | "you're the last person on Earth" + 3,7 s sobre DAY 1 (RV01 0:27) · "500." + 2,6 s (RV03 0:31) · a pergunta do título + 2,9 s (RV02 0:34) |
-| Troca de ato ou passagem de tempo | 4,5–13 s | RV04: 4,8 / 4,7 / 4,1 / 4,6 s nas quatro trocas · RV01: "…somewhere a person could actually live." + 8,8 s → "Day 50." · "You're still here." + 10,7 s · "Calling anyone." + 12,8 s |
-| Emoção que precisa assentar | 4–10 s | o nome da cadela + 9,5 s (RV01 4:40) · "The first light in the city you made yourself." + 10,2 s (RV01 5:55) · "Inside it is somewhere else." + 6,6 s (RV04 8:24) · o avô vira a carta + 9,0 s (RV04 9:36) |
-| **A frase da escolha ou do clímax** | **10–11 s** | "The ball (1.2) or the boy?" + 10,6 s com 8 cortes (RV02 5:31) · "You should get the door." + 10,4 s com 8 cortes (RV03 7:18) |
-| A porta aberta do fim | até 14 s | "…your computer turned on by itself and someone started typing." + 13,8 s, com o texto digitado na tela (RV03 8:20) |
+| Piada seca ou ironia | 0,3–1,2 s, e segue | [frase] 0,95 s (RV01 1:27) · [frase] 0,47 s (RV04 0:52) · depois da piada, 0,45–0,56 s e corte (RV05) |
+| Soco de uma demonstração (a imagem paga a frase) | 4–8 s | [frase, pausa de 0,6 s] + 4,4 s (RV02 0:06) · [frase] + 7,9 s (RV02 1:39) · [frase] + 3,9 s (RV03 1:06) |
+| Fecho de item ou de bloco, no rosto do herói ou de quem viu | 1,6–8 s | os seis fechos do livro-caixa de RV03, 1,56–3,24 s · [frase] + 6,6 s (RV02 1:08) · [frase] + 7,8 s (RV02 3:21) |
+| Revelação da premissa | 2,5–3,7 s | [frase] + 3,7 s sobre DAY 1 (RV01 0:27) · "500." + 2,6 s (RV03 0:31) · a pergunta do título + 2,9 s (RV02 0:34) |
+| Troca de ato ou passagem de tempo | 4,5–13 s | RV04: 4,8 / 4,7 / 4,1 / 4,6 s nas quatro trocas · RV01: [frase] + 8,8 s → "Day 50." · [frase] + 10,7 s · [frase] + 12,8 s |
+| Emoção que precisa assentar | 4–10 s | o nome da cadela + 9,5 s (RV01 4:40) · [frase] + 10,2 s (RV01 5:55) · [frase] + 6,6 s (RV04 8:24) · o avô vira a carta + 9,0 s (RV04 9:36) |
+| **A frase da escolha ou do clímax** | **10–11 s** | [frase, pausa de 1,2 s] + 10,6 s com 8 cortes (RV02 5:31) · [frase] + 10,4 s com 8 cortes (RV03 7:18) |
+| A porta aberta do fim | até 14 s | [frase] + 13,8 s, com o texto digitado na tela (RV03 8:20) |
 
-**4. A pausa antes da última palavra é o suspense de bolso.** De 0,4 a 1,9 s no meio da frase, logo antes da palavra que paga: "You just (0.6) catch it." · "The ball (1.2) or the boy?" · "You watch it the whole way, (1.9) and crush it." · "Not the dark, (0.4) the quiet." · "C Q (0.5) still here." · "Worth it, (0.5) mostly." RV03 tem 44 pausas assim, e 16 caem antes da palavra da virada; o canal marca essas pausas com reticências na própria legenda (RV02).
+**4. A pausa antes da última palavra é o suspense de bolso.** De 0,4 a 1,9 s no meio da frase, logo antes da palavra que paga: [frase, pausa de 0,6 s] · [frase, pausa de 1,2 s] · [frase, pausa de 1,9 s] · [frase, pausa de 0,4 s] · [frase, pausa de 0,5 s] · [frase, pausa de 0,5 s] RV03 tem 44 pausas assim, e 16 caem antes da palavra da virada; o canal marca essas pausas com reticências na própria legenda (RV02).
 
-**5. Lista corre, virada freia.** Lista cômica com 0,3–0,7 s entre itens e um plano por item: "Save. Save. Goal. Top corner. Nobody could stop it." (RV02 4:55) · "The world feels slow. (0.7) Movies feel like slideshows. (0.7) Headaches." (RV02 4:32). Lista terna respira mais, 0,9–1,4 s entre itens (RV03 4:21–4:31). Antes da virada, a frase encurta, a música cai e o silêncio cresce (RV02 5:02–5:29).
+**5. Lista corre, virada freia.** Lista cômica com 0,3–0,7 s entre itens e um plano por item: [frase] (RV02 4:55) · [frase, pausa de 0,7 e 0,7 s] (RV02 4:32). Lista terna respira mais, 0,9–1,4 s entre itens (RV03 4:21–4:31). Antes da virada, a frase encurta, a música cai e o silêncio cresce (RV02 5:02–5:29).
 
 **6. O último terço desacelera pelo silêncio, não pela fala lenta.** Em RV04 as palavras por minuto caem de 160–178 para 94 no último minuto, mas a velocidade da fala é a mesma: o que cresce é o silêncio (fala de 88% para 54% do tempo) e a fatia de frases curtas (de 24–30% para 41%). RV05 faz o mesmo em escala menor: a pausa mediana sobe de 0,35 s para 0,44 s quando a história vira drama, e todas as pausas de 0,6 s ou mais estão depois de 7:50.
 

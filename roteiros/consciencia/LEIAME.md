@@ -23,6 +23,6 @@ O que o estúdio sabe sobre escrever roteiros que seguram a atenção, tirado de
 
 ## Neste plugin (espaco-em-codigo)
 
-Aqui vem o **método** de escrever um roteiro que segura a atenção. Não vêm: o `conferir_roteiro.py` e os moldes de história com personagens (`ROTEIRO.md`, `roteiro.schema.json`), que são de outro formato de vídeo; a pasta `../estudos/`, as análises dos vídeos de referência (`referencias/`) e os roteiros das outras linhas. Onde um arquivo daqui citar uma dessas coisas, leia como contexto.
+Aqui vem o **método** de escrever um roteiro que segura a atenção. As frases literais dos vídeos de referência foram trocadas por `[frase]`; ficam os números, os tempos (`RV02 5:29` é o vídeo e o minuto, na pasta de referências de quem montou o método) e as regras. Não vêm: o `conferir_roteiro.py` e os moldes de história com personagens (`ROTEIRO.md`, `roteiro.schema.json`), que são de outro formato de vídeo; a pasta `../estudos/`, as análises dos vídeos de referência (`referencias/`) e os roteiros das outras linhas. Onde um arquivo daqui citar uma dessas coisas, leia como contexto.
 
 No vídeo de espaço, o roteiro tem outro formato (`roteiro.json` com falas e pedaços; veja `estudio/espaco/projetos/LEIA_O_PLANO.md`) e a conferência é a do `npm run video -- conferir`. Os limites medidos de `parametros.json` continuam valendo como referência de ritmo e de pausa.
