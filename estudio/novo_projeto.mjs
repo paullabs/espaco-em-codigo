@@ -4,36 +4,21 @@
 // Sem pasta, usa a pasta atual. Pelo plugin do Claude Code o caminho é o da instalação do plugin:
 //   node "${CLAUDE_PLUGIN_ROOT}/estudio/novo_projeto.mjs" ~/videos-de-espaco
 // Se algum arquivo do destino já existir, nada é copiado e o script lista os conflitos (código 1).
-// Não entram na cópia: .git, node_modules, as saídas (saida/, voz/, voz_final/, entrega/, referencias/), .DS_Store e, na raiz,
-// o que é só do plugin (.claude-plugin/ e skills/): a skill video-espaco vai junto em .claude/skills/, na versão do motor copiado.
+// Quais arquivos entram (e quais não) está em kit_arquivos.mjs, o mesmo critério do atualizar_projeto.mjs.
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { KIT, dentroDe, listarArquivos } from './kit_arquivos.mjs';
 
-const KIT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
 const simular = args.includes('--simular');
 const destino = path.resolve((args.find((a) => !a.startsWith('--')) || process.cwd()).replace(/^~(?=$|\/)/, process.env.HOME || '~'));
 
-const EM_QUALQUER_LUGAR = new Set(['.git', 'node_modules', 'saida', 'voz', 'voz_final', 'entrega', 'referencias', '.DS_Store']);
-const SO_NA_RAIZ = new Set(['.claude-plugin', 'skills']);
-const ignorar = (partes) => partes.some((p) => EM_QUALQUER_LUGAR.has(p)) || SO_NA_RAIZ.has(partes[0]);
-
-if (destino === KIT || destino.startsWith(KIT + path.sep)) {
+if (dentroDe(destino, KIT)) {
   console.error(`O destino (${destino}) está dentro do próprio plugin.\nUse uma pasta nova para os seus vídeos (por exemplo ~/videos-de-espaco) e rode de lá.`);
   process.exit(2);
 }
 
-const arquivos = [];
-(function andar(dir, partes) {
-  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
-    const p = [...partes, e.name];
-    if (ignorar(p) || e.isSymbolicLink()) continue;
-    if (e.isDirectory()) andar(path.join(dir, e.name), p);
-    else if (e.isFile()) arquivos.push(p);
-  }
-})(KIT, []);
-arquivos.sort((a, b) => a.join('/').localeCompare(b.join('/')));
+const arquivos = listarArquivos();
 
 const conflitos = arquivos.filter((p) => {
   try { fs.lstatSync(path.join(destino, ...p)); return true; } catch { return false; }

@@ -10,7 +10,7 @@ Este plugin traz o estúdio inteiro: o motor 3D, as ferramentas, os exemplos e a
 ## Passos
 
 1. **Veja onde está:** rode `pwd` e `ls -A`.
-   - Se a pasta já tem `estudio/espaco/` e um `package.json` com `"name": "espaco-em-codigo"`, ela **já é um projeto**: não copie nada e siga para a skill `novo-video`.
+   - Se a pasta já tem `estudio/espaco/` e um `package.json` com `"name": "espaco-em-codigo"`, ela **já é um projeto**: não copie nada. Se o plugin tem versão mais nova que a do projeto (compare os `package.json`), use a skill `atualizar-projeto`; se não, siga para a skill `novo-video`.
    - Se a pasta tem outras coisas e não está claro que é ali, **pergunte antes** e sugira uma pasta nova (por exemplo `~/videos-de-espaco`). O script não sobrescreve nada: se houver conflito, ele para sem copiar.
 2. **Confira o básico:** `node --version` (precisa de 18 ou mais) e `ffmpeg -version`. Se faltar algum, diga o comando de instalação (no Mac, `brew install node ffmpeg`; no Windows, `winget install OpenJS.NodeJS Gyan.FFmpeg`) e **espere o sim** antes de instalar. O Chrome e a placa de vídeo são conferidos pelo `doctor`.
 3. **Copie o estúdio** para a pasta:

@@ -6,7 +6,7 @@
     {
       "name": "espaco-em-codigo",
       "source": "./",
-      "description": "Cria o projeto espaco-em-codigo na sua pasta (skill novo-projeto) e guia o vídeo do roteiro à entrega (skill novo-video): Shorts de espaço e ciência em 3D feito em código."
+      "description": "Cria o projeto espaco-em-codigo na sua pasta (skill novo-projeto) guia o vídeo do roteiro à entrega (skill novo-video) e atualiza projetos antigos (skill atualizar-projeto): Shorts de espaço e ciência em 3D feito em código."
     }
   ]
 }

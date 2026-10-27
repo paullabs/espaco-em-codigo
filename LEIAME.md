@@ -52,6 +52,17 @@ O método de escrever a fala (as leis do roteiro que segura a atenção, a estru
 
 Para estudar um vídeo que você admira: `npm run video -- referencia meu_video video.mp4` (ou um link, com o `yt-dlp` instalado). Ele mede cortes por minuto, duração dos planos, paleta, brilho e volume. O vídeo de referência fica só na sua máquina e nada dele entra no seu vídeo.
 
+## Atualizar o seu projeto
+
+O plugin instala uma **cópia** do estúdio na sua pasta. Quando o plugin atualiza (`claude plugin update espaco-em-codigo@espaco-em-codigo`), os projetos que você já criou continuam com a cópia antiga. Para levar a nova, abra o Claude Code na pasta do projeto e peça `/espaco-em-codigo:atualizar-projeto`, ou rode na mão:
+
+```bash
+node "<pasta do plugin>/estudio/atualizar_projeto.mjs" --simular   # só mostra o plano
+node "<pasta do plugin>/estudio/atualizar_projeto.mjs"             # aplica
+```
+
+Nunca toca no seu `perfil/`, no `.env`, no `estudio.config.json` nem em nenhum vídeo seu em `estudio/espaco/projetos/` (nem nos exemplos, que você pode ter mexido). O que ele substitui (o motor, as ferramentas, a skill do método, o método de roteiro) tem a cópia do antigo em `.atualizacao/`. O que mudou em cada versão está no `CHANGELOG.md`.
+
 ## Computador travando?
 
 Acrescente `--leve` a qualquer comando de render: fica mais devagar e deixa a máquina livre. O render já roda em prioridade baixa. O rascunho é leve (540×960, 12 qps); só o `final` é pesado (uns 3 min para 20 s num computador recente).

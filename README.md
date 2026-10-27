@@ -13,6 +13,8 @@ claude plugin install espaco-em-codigo@espaco-em-codigo
 
 Numa pasta nova, abra o Claude Code e peça `/espaco-em-codigo:novo-projeto`. Ele copia o estúdio para a pasta, instala as dependências, confere o computador e renderiza o exemplo "E se a Lua sumisse?". Depois peça o seu vídeo, ou use `/espaco-em-codigo:novo-video`.
 
+Quando o plugin atualizar, `/espaco-em-codigo:atualizar-projeto` leva a versão nova para o projeto que você já criou, sem tocar nos seus vídeos ([CHANGELOG.md](CHANGELOG.md)).
+
 Ou clone o repositório e siga o [LEIAME.md](LEIAME.md): requisitos, primeiro uso, comandos, voz com a sua chave e o que não vem.
 
 ## Licença

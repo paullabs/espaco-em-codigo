@@ -1,6 +1,6 @@
 {
   "name": "espaco-em-codigo",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Estúdio de vídeos de espaço e ciência em código: cria na sua pasta o projeto com o motor 3D (planetas, estrelas, órbitas, explosões, câmera de cinema), a skill que guia o vídeo e as ferramentas de voz, conferência e mixagem.",
   "author": { "name": "LABS" },
   "homepage": "https://github.com/paullabs/espaco-em-codigo",
