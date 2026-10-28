@@ -73,7 +73,7 @@ Copie o `.env.example` para `.env` e preencha `ELEVENLABS_API_KEY` e `ELEVENLABS
 
 ## A marca d'água
 
-Todo vídeo feito com este estúdio leva uma **marca d'água fraca do canal LABS**: 4% de opacidade, num dos cantos, mudando de canto durante o vídeo. Ela é condição da licença (arquivo `LICENSE`, seção 3), e `npm run conferir -- marca` confere se ela está intacta. O resto do vídeo é seu: roteiro, ideias, publicação e monetização.
+Todo vídeo feito com este estúdio leva uma **marca d'água fraca do canal LABS**: 1,5% de opacidade, só o nome em letras pequenas, num dos cantos, mudando de canto durante o vídeo. Ela é condição da licença (arquivo `LICENSE`, seção 3), e `npm run conferir -- marca` confere se ela está intacta. O resto do vídeo é seu: roteiro, ideias, publicação e monetização.
 
 ## O que ainda não foi testado
 

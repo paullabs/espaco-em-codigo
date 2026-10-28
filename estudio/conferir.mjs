@@ -176,9 +176,9 @@ const CONFERENCIAS = {
       // 4) opacidade e cantos combinados
       const agenda = fs.readFileSync(path.join(est, 'espaco', 'marca_agenda.js'), 'utf8');
       const m = agenda.match(/opacidade:\s*([0-9.]+)/);
-      if (!m || +m[1] < 0.03 || +m[1] > 0.06) erros.push(`opacidade fora do combinado (3% a 6%): ${m ? m[1] : 'não achei'}`);
+      if (!m || +m[1] < 0.01 || +m[1] > 0.03) erros.push(`opacidade fora do combinado (1% a 3%): ${m ? m[1] : 'não achei'}`);
       for (const c of ["'SE'", "'SD'", "'IE'", "'ID'"]) if (!agenda.includes(c)) erros.push(`canto ${c} sumiu da agenda`);
-      det.push(`opacidade ${m ? (+m[1] * 100).toFixed(0) : '?'}%, ${SELADOS.length} arquivos selados, ${RENDERIZADORES.length} renderizador(es) ligado(s): ${RENDERIZADORES.map((r) => MOTORES_MARCA[r]).join(', ')}`);
+      det.push(`opacidade ${m ? +(+m[1] * 100).toFixed(1) : '?'}%, ${SELADOS.length} arquivos selados, ${RENDERIZADORES.length} renderizador(es) ligado(s): ${RENDERIZADORES.map((r) => MOTORES_MARCA[r]).join(', ')}`);
       if (foraDoKit.length) det.push(`fora deste kit (não conferidos): ${foraDoKit.map((r) => MOTORES_MARCA[r]).join(', ')}`);
       det.push('o quadro de cada motor é provado por: node estudio/marca_teste.mjs');
       return erros.length ? falha('a marca d\'água do canal foi alterada ou desligada', [...erros, 'O kit exige a marca (veja o LEIAME). Restaure os arquivos originais.']) : bom(foraDoKit.length ? 'marca d\'água do canal íntegra e ligada a todos os motores deste kit' : 'marca d\'água do canal íntegra e ligada a todos os motores', det);

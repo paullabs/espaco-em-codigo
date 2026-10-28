@@ -1,8 +1,8 @@
 {
-  "versao": 2,
-  "opacidade": 0.04,
+  "versao": 3,
+  "opacidade": 0.015,
   "arquivos": {
-    "espaco/marca_agenda.js": "b6edf7879a34b33df9e98fcb05a0dfcb1e89d0e5e8f9e45049b4805203cfe81a",
+    "espaco/marca_agenda.js": "3200510c3f5b2da0ac772ba92bcfe2c513d63c0b5594ae8ed745a30f46e7ce37",
     "espaco/marca.js": "0db1121630fc5a9914fe46ab0255e4e5f3500e42d4b5522524c645a5572bf5f0",
     "marca_pagina.mjs": "c5a509ee03658d586b5f50d9d31ced81e10a11e6c1c77c7420a47d9a66bf7330"
   },

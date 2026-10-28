@@ -113,7 +113,7 @@ async function testar(nome) {
 
 if (!escolhidos.length) { console.log('Este kit não traz motor de página para este teste: a marca do espaço fica no pós (pos.js) e é conferida por npm run conferir -- marca.'); process.exit(0); }
 let falhou = false;
-console.log(`marca "${MARCA.nome}" a ${(MARCA.opacidade * 100).toFixed(0)}% — quadro em t=${t} s`);
+console.log(`marca "${MARCA.nome}" a ${+(MARCA.opacidade * 100).toFixed(1)}% — quadro em t=${t} s`);
 for (const nome of escolhidos) {
   const r = await testar(nome).catch((e) => ({ nome, ok: false, erro: e.message }));
   if (!r.ok) falhou = true;

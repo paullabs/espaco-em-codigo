@@ -1,7 +1,7 @@
 {
   "name": "espaco-em-codigo",
   "private": true,
-  "version": "0.3.0",
+  "version": "0.3.1",
   "type": "module",
   "description": "Estúdio de vídeos animados em 3D feito em código. As dependências ficam em estudio/motor3d.",
   "scripts": {

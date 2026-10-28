@@ -1,5 +1,9 @@
 # Novidades por versão
 
+## 0.3.1
+
+- **Marca d'água mais discreta**: 1,5% de opacidade (era 4%), só o nome do canal (sem a barra dourada), metade do tamanho e mais perto das pontas dos cantos. Continua mudando de canto. `npm run conferir -- marca` passa a aceitar de 1% a 3%. Quem já criou um projeto leva a mudança com `/espaco-em-codigo:atualizar-projeto`.
+
 ## 0.3.0
 
 - **`/espaco-em-codigo:atualizar-projeto`**: leva o motor e o método novos para um projeto que você já criou. Não toca no seu perfil, no `.env`, no `estudio.config.json` nem em nenhum vídeo seu em `estudio/espaco/projetos/` (nem nos exemplos, que você pode ter mexido); guarda cópia de tudo o que substitui em `.atualizacao/`. Um exemplo novo que o plugin traga entra sozinho.
