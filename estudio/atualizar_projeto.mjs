@@ -117,5 +117,5 @@ if (!simular) {
   console.log(`Pronto: ${plano.novos.length} arquivos novos e ${plano.substituidos.length} atualizados.`);
   if (plano.substituidos.length || plano.mantidos.length) console.log(`Cópias de segurança e versões novas para comparar: ${path.relative(destino, pasta)}/`);
 }
-const deps = [...plano.novos, ...plano.substituidos].some((r) => /^estudio\/motor3d\/package(-lock)?\.json$/.test(r));
-console.log(`Próximos passos: ${deps ? 'npm run instalar (as dependências mudaram), ' : ''}npm run doctor, npm run conferir -- marca. O que mudou: CHANGELOG.md. Se o Claude Code estiver aberto nesta pasta, feche e abra de novo para ele ler a skill atualizada.`);
+const deps = [...plano.novos, ...plano.substituidos].some((r) => /^estudio\/(motor3d|ferramentas_locais)\/package(-lock)?\.json$/.test(r));
+console.log(`Próximos passos: ${deps ? 'npm run preparar (as dependências mudaram), ' : 'npm run preparar (confere o computador e baixa só o que falta), '}npm run conferir -- marca. O que mudou: CHANGELOG.md. Se o Claude Code estiver aberto nesta pasta, feche e abra de novo para ele ler a skill atualizada.`);

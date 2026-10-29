@@ -13,8 +13,9 @@ O seu agente (Claude Code, Codex ou outro) faz isso com você, em portões, pedi
 
 ## Do que precisa
 
-- **Node 18 ou mais** e **ffmpeg** (no Mac: `brew install node ffmpeg`; no Windows: `winget install OpenJS.NodeJS Gyan.FFmpeg`; no Linux: o gerenciador de pacotes).
-- **Google Chrome**, ou o Chromium que o Playwright baixa. O `doctor` acha o Chrome sozinho.
+- **Node 18 ou mais.** É a única peça que você instala à mão (Mac: `brew install node`; Windows: `winget install --id OpenJS.NodeJS.LTS -e`; Linux: o gerenciador de pacotes). O resto o `npm run preparar` resolve.
+- **ffmpeg com libx264.** Se você já tem, é usado (até o do Homebrew, do winget, do Chocolatey ou do Scoop, mesmo fora do PATH). Se não, o `preparar` baixa um ffmpeg e um ffprobe só para o projeto (uns 50 MB).
+- **Google Chrome, Chromium ou Edge.** O estúdio acha o que você já tem (o Windows já vem com o Edge). Se não houver nenhum, o `preparar` baixa um Chromium só para o projeto (uns 300 MB).
 - Uma placa de vídeo ajuda muito; sem ela funciona, mais devagar (o `doctor` estima o tempo).
 - **Voz-guia grátis:**
   - no Mac já vem (voz Luciana, ou outra em português);
@@ -27,8 +28,7 @@ O seu agente (Claude Code, Codex ou outro) faz isso com você, em portões, pedi
 ## Primeiro uso
 
 ```bash
-npm run instalar                          # uma vez: baixa o three.js e o Playwright
-npm run doctor                            # confere o computador
+npm run preparar                          # uma vez, no Mac ou no Windows: confere o computador, mostra o que falta e, com o seu sim, baixa só isso; no fim roda o doctor
 npm run video -- rascunho exemplo_lua     # o exemplo "E se a Lua sumisse?" (19 s), em uns 30 s
 ```
 
@@ -77,7 +77,7 @@ Todo vídeo feito com este estúdio leva uma **marca d'água fraca do canal LABS
 
 ## O que ainda não foi testado
 
-- **Só foi usado num Mac com chip Apple.** Windows e Linux têm os caminhos escritos (voz do sistema, Chrome, ffmpeg), mas ninguém rodou lá ainda: se algo falhar, o `npm run doctor` diz o que falta.
+- **Só foi rodado de verdade num Mac com chip Apple.** No Windows, a busca de programas (Chrome, Edge, ffmpeg do winget, do Chocolatey e do Scoop) e o plano do `preparar` foram testados por simulação; o download, o render e a voz do sistema (PowerShell) estão escritos, mas ninguém rodou lá ainda. Linux idem. Se algo falhar, o `npm run doctor` diz o que falta.
 - **A voz final da ElevenLabs** (`voz-final`) foi escrita contra a documentação, mas nunca rodou de ponta a ponta com uma chave de verdade. Rode primeiro sem `--confirmo` e confira o custo.
 - **Nenhuma pessoa de fora usou o estúdio ainda.** Um agente de fora refez um vídeo só pelo texto, mas vale a sua revisão do que ele entrega.
 
@@ -90,3 +90,11 @@ Todo vídeo feito com este estúdio leva uma **marca d'água fraca do canal LABS
 ## Licença
 
 Licença própria (arquivo `LICENSE`): uso livre, inclusive comercial, com uma condição: todo vídeo publicado leva a marca d'água do canal do Titular. Não é permitido vender o estúdio como produto, curso ou template. Os componentes de terceiros (three.js, Playwright, fontes) seguem as licenças deles (`LICENCAS_TERCEIROS.md`).
+
+## Instalação automática: o que ela faz e o que não faz
+
+- `npm run preparar` **nunca pede senha de administrador** e só baixa para dentro da pasta do projeto (`estudio/motor3d/node_modules`, `estudio/ferramentas_locais`). Apagar a pasta do projeto apaga tudo.
+- **O que você já tem é usado, não baixado de novo.** Só baixa o que não achar.
+- `npm run preparar -- --simular` só mostra o plano; `-- --sim` baixa sem perguntar. `npm run doctor` diz de onde vem cada programa.
+- Para usar só as cópias do projeto e ignorar as do sistema: `ESTUDIO_IGNORAR=ffmpeg,chrome` no `.env`.
+- O Node é a única peça que ele não instala (é ele que roda o resto). Se faltar, a skill `novo-projeto` mostra o comando do `winget` ou do `brew`.

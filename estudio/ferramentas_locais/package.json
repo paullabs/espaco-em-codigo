@@ -1,0 +1,10 @@
+{
+  "name": "ferramentas-locais-estudio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ffmpeg e ffprobe de reserva. O npm run preparar só instala isto se a máquina não tiver os dois; quem já tem nunca baixa.",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "1.1.0",
+    "@ffprobe-installer/ffprobe": "2.1.2"
+  }
+}

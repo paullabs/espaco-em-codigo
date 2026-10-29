@@ -71,6 +71,7 @@ else { f.push('[vozk]anullsink'); f.push('[voz][efe]amix=inputs=2:normalize=0,lo
 
 fs.mkdirSync(path.dirname(saida), { recursive: true });
 rodar(FFMPEG, ['-nostdin', '-v', 'error', '-y', ...ent, '-filter_complex', f.join(';'), '-map', '0:v', '-map', '[mix]', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-ar', '44100', '-t', DUR.toFixed(3), saida]);
-const med = spawnSync(FFMPEG, ['-nostdin', '-hide_banner', '-i', saida, '-af', 'ebur128=framelog=quiet', '-f', 'null', '-'], { encoding: 'utf8' });
-const lufs = ((med.stderr || '').match(/I:\s+(-?[\d.]+) LUFS/g) || []).pop();
+// sem framelog=quiet: essa opção só existe a partir do ffmpeg 5, e o ffmpeg de reserva do projeto (npm run preparar) é o 4.4; lê só o bloco Summary
+const med = spawnSync(FFMPEG, ['-nostdin', '-nostats', '-hide_banner', '-i', saida, '-af', 'ebur128', '-f', 'null', '-'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+const lufs = ((med.stderr || '').slice((med.stderr || '').lastIndexOf('Summary:')).match(/I:\s+(-?[\d.]+) LUFS/) || [])[0];
 console.log(`mixado: projetos/${nome}/${A.saida} (${DUR.toFixed(1)} s; voz ${lin.voz || 'guia'}; ${sons.length} efeito(s); fundo ${plano.musica ? 'música da pessoa' : temFundo ? 'tonal' : 'nenhum'}; ${lufs ? lufs.replace(/\s+/g, ' ') : 'volume não medido'})`);

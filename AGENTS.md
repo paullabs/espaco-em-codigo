@@ -18,7 +18,7 @@ As skills são markdown simples e valem para qualquer agente.
 4. **Voz paga só no fim:** `npm run video -- voz-final <nome>` mostra o custo. Com o sim de quem paga, rode com `--confirmo`: uma tomada, sem variações.
 5. **Final:** `npm run video -- final <nome>` gera 1080×1920, 24 qps, −14 LUFS e a pasta `entrega/`.
 
-Na primeira vez, rode `npm run instalar` e `npm run doctor`. Sem GPU, avise o tempo estimado de render antes de começar.
+Na primeira vez, rode `node estudio/preparar.mjs --simular`, conte o que falta, peça um único sim e rode `node estudio/preparar.mjs --sim` (ele baixa só o que falta, para dentro do projeto, e roda o `doctor` no fim). Sem GPU, avise o tempo estimado de render antes de começar.
 
 ## Regras que valem em todo vídeo
 

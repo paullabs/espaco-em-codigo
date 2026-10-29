@@ -4,14 +4,23 @@ Estúdio de **vídeos curtos de espaço e ciência em código**: Shorts e Reels 
 
 ## Comece
 
-Pelo plugin do Claude Code (não precisa clonar):
+Pelo plugin (não precisa clonar). No **Claude Code**:
 
 ```bash
 claude plugin marketplace add paullabs/espaco-em-codigo
-claude plugin install espaco-em-codigo@espaco-em-codigo
+claude plugin install espaco-em-codigo@espaco-em-codigo --scope user
 ```
 
-Numa pasta nova, abra o Claude Code e peça `/espaco-em-codigo:novo-projeto`. Ele copia o estúdio para a pasta, instala as dependências, confere o computador e renderiza o exemplo "E se a Lua sumisse?". Depois peça o seu vídeo, ou use `/espaco-em-codigo:novo-video`.
+No **Codex**:
+
+```bash
+codex plugin marketplace add paullabs/espaco-em-codigo
+codex plugin add espaco-em-codigo@espaco-em-codigo
+```
+
+`--scope user` instala para todas as suas pastas (é o padrão do Claude Code). Para conferir, `claude plugin list` tem de mostrar `Scope: user` e `codex plugin list` tem de mostrar `installed, enabled`. Se o Claude mostrar `project` ou `local`, o plugin só vale naquela pasta: rode o `install` de novo com `--scope user`.
+
+Numa pasta nova, abra o Claude Code e peça `/espaco-em-codigo:novo-projeto` (no Codex, peça em palavras: "criar meu projeto do espaco-em-codigo"). Ele copia o estúdio para a pasta, instala as dependências, confere o computador e renderiza o exemplo "E se a Lua sumisse?". Depois peça o seu vídeo, ou use `/espaco-em-codigo:novo-video`.
 
 Quando o plugin atualizar, `/espaco-em-codigo:atualizar-projeto` leva a versão nova para o projeto que você já criou, sem tocar nos seus vídeos ([CHANGELOG.md](CHANGELOG.md)).
 

@@ -50,8 +50,9 @@ for (let i = 0; raw && i + 2 < raw.length && cores.length < 8; i += 3) { const h
 const est = spawnSync(FFMPEG, ['-nostdin', '-hide_banner', '-i', video, '-vf', 'fps=2,signalstats,metadata=print:key=lavfi.signalstats.YAVG', '-an', '-f', 'null', '-'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
 const ys = [...(est.stderr || '').matchAll(/YAVG=([\d.]+)/g)].map((m) => +m[1]);
 const brilho = ys.length ? ys.reduce((a, b) => a + b, 0) / ys.length : null;
-const vol = spawnSync(FFMPEG, ['-nostdin', '-hide_banner', '-i', video, '-af', 'ebur128=framelog=quiet', '-f', 'null', '-'], { encoding: 'utf8' });
-const lufs = ((vol.stderr || '').match(/I:\s+(-?[\d.]+) LUFS/g) || []).pop();
+// sem framelog=quiet: essa opção só existe a partir do ffmpeg 5 (o de reserva do projeto é o 4.4); lê só o bloco Summary
+const vol = spawnSync(FFMPEG, ['-nostdin', '-nostats', '-hide_banner', '-i', video, '-af', 'ebur128', '-f', 'null', '-'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+const lufs = ((vol.stderr || '').slice((vol.stderr || '').lastIndexOf('Summary:')).match(/I:\s+(-?[\d.]+) LUFS/) || [])[0];
 
 const regua = {
   fonte: /^https?:/.test(fonte) ? fonte : path.basename(fonte), duracao_s: +dur.toFixed(2), tamanho: `${info.width}x${info.height}`, qps: info.r_frame_rate,

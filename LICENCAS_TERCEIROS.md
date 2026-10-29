@@ -8,8 +8,8 @@ O kit usa as peças abaixo. Cada uma segue a licença do seu autor; isto aqui é
 
 | Peça | Autor e licença | Onde |
 |---|---|---|
-| Three.js 0.160.0 | © 2010-2023 three.js authors, licença MIT | instalada por `npm run instalar` (o texto da licença vem junto, em `estudio/motor3d/node_modules/three/LICENSE`) |
-| Playwright (playwright-core 1.49.1) | © Microsoft Corporation, licença Apache 2.0 (contém código derivado do Puppeteer, também Apache 2.0) | instalada por `npm run instalar` (`LICENSE` e `NOTICE` vêm junto) |
+| Three.js 0.160.0 | © 2010-2023 three.js authors, licença MIT | instalada por `npm run preparar` (o texto da licença vem junto, em `estudio/motor3d/node_modules/three/LICENSE`) |
+| Playwright (playwright-core 1.49.1) | © Microsoft Corporation, licença Apache 2.0 (contém código derivado do Puppeteer, também Apache 2.0) | instalada por `npm run preparar` (`LICENSE` e `NOTICE` vêm junto) |
 | Fonte Outfit (legenda e marca d'água) | © 2021 The Outfit Project Authors (https://github.com/Outfitio/Outfit-Fonts), SIL Open Font License 1.1 | `estudio/espaco/fontes/Outfit.ttf` |
 | Fonte Space Grotesk (rótulos) | © 2020 The Space Grotesk Project Authors (https://github.com/floriankarsten/space-grotesk), SIL Open Font License 1.1 | `estudio/espaco/fontes/SpaceGrotesk-*.otf` |
 
@@ -26,3 +26,12 @@ Os corpos celestes, os efeitos, as texturas e os sons são gerados por código d
 | Voz final (ElevenLabs) | gerada na sua conta e sob os termos do seu plano; o kit não traz voz nem música |
 | Música | a sua, com licença sua, no campo "musica" do plano |
 | yt-dlp e vídeos de referência | instalados e baixados por você, só para estudo (medir ritmo e cores); continuam sendo de quem os fez e nada deles entra nos seus vídeos |
+
+## Baixados no seu computador só se faltarem (pelo `npm run preparar`)
+
+O kit **não leva** estas peças: só o `package.json` que manda o `npm` ou o Playwright baixá-las, direto das fontes deles, para dentro da pasta do projeto. Nada disto é redistribuído por nós.
+
+| Peça | Autor e licença | Onde |
+|---|---|---|
+| @ffmpeg-installer/ffmpeg 1.1.0 e @ffprobe-installer/ffprobe 2.1.2 | pacotes de kribblo e dos autores, licença LGPL-2.1, que trazem builds do FFmpeg 4.4 (© os autores do FFmpeg; esse build é GPL, com libx264 e componentes "nonfree", por isso só pode ser usado na sua máquina, nunca redistribuído) | `estudio/ferramentas_locais/node_modules`, só se o computador não tiver ffmpeg com libx264 |
+| Chromium (build do Playwright 1.49.1) | © The Chromium Authors, licença BSD-3-Clause e as de terceiros listadas no próprio navegador (chrome://credits) | `estudio/ferramentas_locais/navegador`, só se não houver Chrome, Chromium nem Edge |

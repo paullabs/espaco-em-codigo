@@ -5,7 +5,9 @@ import os from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
-import { RAIZ_PROJETO, FFMPEG, FFPROBE, acharChrome, opcoesNavegador, backendGpu, temVariavel } from './ambiente.mjs';
+import { RAIZ_PROJETO, dentroDoLocal, FFMPEG, FFPROBE, ORIGEM_PROGRAMAS, acharChrome, opcoesNavegador, backendGpu, temVariavel } from './ambiente.mjs';
+
+const deOnde = (origem) => (origem === 'projeto' ? 'cópia deste projeto' : origem === 'sistema' ? 'instalado no computador' : origem ? `de ${origem}` : '');
 
 // Medido pelos autores em 26/10/2026 (MacBook Pro com Apple M5 Pro, com o computador em uso):
 // segundos por quadro de uma cena de teste de cada linha, 1080×1920, e o tempo do teste de GPU abaixo.
@@ -80,23 +82,23 @@ let chrome = null;
 try {
   chrome = acharChrome();
   const v = rodar(chrome, ['--version']);
-  ok('Chrome', `${v.ok ? v.out : ''} (${chrome})`);
-} catch (e) { falta('Chrome não encontrado', e.message); }
+  ok('Navegador', `${v.ok ? v.out : ''} (${dentroDoLocal(chrome) ? 'cópia deste projeto, ' : ''}${chrome})`);
+} catch (e) { falta('Navegador não encontrado', e.message); }
 
 const ff = rodar(FFMPEG, ['-hide_banner', '-version']);
-if (!ff.ok) falta('ffmpeg não encontrado', 'Instale o ffmpeg (macOS: brew install ffmpeg) e deixe no PATH, ou aponte em FFMPEG_PATH / "ffmpeg" do estudio.config.json.');
+if (!ff.ok) falta('ffmpeg não encontrado', 'Rode: npm run preparar (ele baixa uma cópia só para este projeto). Ou instale o ffmpeg e deixe no PATH (Mac: brew install ffmpeg; Windows: winget install --id Gyan.FFmpeg -e), ou aponte em FFMPEG_PATH / "ffmpeg" do estudio.config.json.');
 else {
-  ok('ffmpeg', ff.out.split('\n')[0]);
+  ok('ffmpeg', `${ff.out.split('\n')[0]}${ORIGEM_PROGRAMAS.ffmpeg ? ` (${deOnde(ORIGEM_PROGRAMAS.ffmpeg)})` : ''}`);
   const enc = rodar(FFMPEG, ['-hide_banner', '-encoders']);
   if (/\blibx264\b/.test(enc.out)) ok('ffmpeg com libx264 (o render usa)');
-  else falta('este ffmpeg não tem o codificador libx264', 'Use um ffmpeg completo (brew install ffmpeg).');
+  else falta('este ffmpeg não tem o codificador libx264', 'Rode: npm run preparar (baixa um ffmpeg completo para este projeto) ou instale um ffmpeg completo.');
 }
 const fp = rodar(FFPROBE, ['-hide_banner', '-version']);
-if (fp.ok) ok('ffprobe'); else falta('ffprobe não encontrado', 'Ele vem junto com o ffmpeg.');
+if (fp.ok) ok('ffprobe', ORIGEM_PROGRAMAS.ffprobe ? deOnde(ORIGEM_PROGRAMAS.ffprobe) : ''); else falta('ffprobe não encontrado', 'Ele vem junto com o ffmpeg. Rode: npm run preparar.');
 
 // o Python só importa para as linhas que têm ferramentas de roteiro, áudio e medida (o kit da luta não tem nenhuma)
 const usaPython = ['roteiros/ferramentas', 'estudio/treino/comum', 'estudio/espaco/audio', 'estudio/espaco/desenho'].some((d) => fs.existsSync(path.join(RAIZ_PROJETO, d)));
-const py = usaPython ? [process.platform === 'win32' ? 'python' : 'python3'].find((c) => rodar(c, ['--version']).ok) : null;
+const py = usaPython ? (process.platform === 'win32' ? ['python', 'py'] : ['python3']).find((c) => rodar(c, ['--version']).ok) : null; // no Windows o "python" pode ser só o atalho da Microsoft Store; o "py" é o lançador oficial
 if (!usaPython) { /* nada a conferir */ } else if (!py) aviso('Python 3 não encontrado', 'Só as ferramentas de áudio, roteiro e medidas usam Python; o render de vídeo não.');
 else {
   ok(rodar(py, ['--version']).out);
@@ -113,9 +115,9 @@ let pacotesOk = true;
 for (const p of ['playwright-core', 'three']) {
   const arq = path.join(nm, p, 'package.json');
   if (fs.existsSync(arq)) ok(`${p} ${JSON.parse(fs.readFileSync(arq, 'utf8')).version}`);
-  else { pacotesOk = false; falta(`${p} não instalado`, 'Rode: npm run instalar'); }
+  else { pacotesOk = false; falta(`${p} não instalado`, 'Rode: npm run preparar'); }
 }
-if (pacotesOk && !fs.existsSync(path.join(RAIZ_PROJETO, 'estudio/node_modules/three/package.json'))) aviso('os scripts do Node fora de motor3d (auditorias, preparo da anatomia) não acham o three', 'Rode: npm run instalar (ele cria o atalho estudio/node_modules).');
+if (pacotesOk && !fs.existsSync(path.join(RAIZ_PROJETO, 'estudio/node_modules/three/package.json'))) aviso('os scripts do Node fora de motor3d (auditorias, preparo da anatomia) não acham o three', 'Rode: npm run preparar (ele cria o atalho estudio/node_modules).');
 
 // 4. GPU, WebGL2 e teste de velocidade
 titulo('Placa de vídeo e WebGL2');

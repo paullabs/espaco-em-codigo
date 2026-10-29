@@ -45,7 +45,7 @@ O texto e os objetos seguem um desenho, não ficam onde calham:
 
 ## Rodar
 
-**Exemplo de um comando** (da raiz do projeto, depois de `npm run instalar` e `npm run doctor`): `npm run exemplo:espaco` renderiza 3 s da cena `sol` (o Sol com corte em camadas, 1080×1920, 24 qps, sem som) em `estudio/espaco/saida/exemplo_espaco.mp4`, em cerca de 30 s num Apple M5 Pro. O render imprime quantos textos há na tela (a regra é no máximo 1).
+**Exemplo de um comando** (da raiz do projeto, depois de `npm run preparar`): `npm run exemplo:espaco` renderiza 3 s da cena `sol` (o Sol com corte em camadas, 1080×1920, 24 qps, sem som) em `estudio/espaco/saida/exemplo_espaco.mp4`, em cerca de 30 s num Apple M5 Pro. O render imprime quantos textos há na tela (a regra é no máximo 1).
 
 ```bash
 cd estudio/espaco

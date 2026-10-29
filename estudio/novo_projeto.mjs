@@ -6,12 +6,13 @@
 // Se algum arquivo do destino já existir, nada é copiado e o script lista os conflitos (código 1).
 // Quais arquivos entram (e quais não) está em kit_arquivos.mjs, o mesmo critério do atualizar_projeto.mjs.
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { KIT, dentroDe, listarArquivos } from './kit_arquivos.mjs';
 
 const args = process.argv.slice(2);
 const simular = args.includes('--simular');
-const destino = path.resolve((args.find((a) => !a.startsWith('--')) || process.cwd()).replace(/^~(?=$|\/)/, process.env.HOME || '~'));
+const destino = path.resolve((args.find((a) => !a.startsWith('--')) || process.cwd()).replace(/^~(?=$|[\\/])/, os.homedir())); // ~ vale no Mac e no Windows
 
 if (dentroDe(destino, KIT)) {
   console.error(`O destino (${destino}) está dentro do próprio plugin.\nUse uma pasta nova para os seus vídeos (por exemplo ~/videos-de-espaco) e rode de lá.`);
@@ -41,8 +42,7 @@ if (!simular) {
 console.log(`${simular ? '[simulação] copiaria' : 'Copiei'} ${arquivos.length} arquivos para ${destino}`);
 console.log([
   'Próximos passos, nessa pasta:',
-  '  npm run instalar                     (uma vez: baixa o three.js e o Playwright)',
-  '  npm run doctor                       (confere o computador)',
+  '  npm run preparar                     (uma vez: confere o computador e baixa só o que falta, no Mac ou no Windows)',
   '  npm run video -- rascunho exemplo_lua  (o exemplo "E se a Lua sumisse?" em uns 30 s)',
   'Depois edite perfil/perfil_da_casa.md e abra o Claude Code nesta pasta para pedir o seu vídeo (ou /espaco-em-codigo:novo-video).',
 ].join('\n'));
