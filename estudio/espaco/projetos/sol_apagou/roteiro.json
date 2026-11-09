@@ -1,0 +1,26 @@
+{
+ "titulo": "E se o Sol sumisse agora?",
+ "pergunta_mae": "E se o Sol sumisse agora?",
+ "fontes": [
+  "A luz do Sol leva, em média, 8 minutos e 20 segundos para chegar à Terra: a distância média é de cerca de 150 milhões de km (semieixo maior da órbita da Terra: 149,598 milhões de km, NASA NSSDC Earth Fact Sheet, https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html) e a luz anda a 300 mil km/s (Universe Today, https://www.universetoday.com/articles/how-long-does-it-take-sunlight-to-reach-the-earth).",
+  "A gravidade se propaga na velocidade da luz (relatividade geral). A medida direta mais precisa vem da fusão de duas estrelas de nêutrons, GW170817, vista em ondas gravitacionais e em raios gama (GRB 170817A): a diferença entre as duas velocidades fica entre -3 x 10^-15 e +7 x 10^-16 vezes a velocidade da luz (LIGO, Virgo, Fermi e outros, https://arxiv.org/abs/1710.05834). Por isso, se o Sol sumisse, a Terra continuaria a ser puxada pelo lugar dele pelos mesmos 8 minutos e 20 segundos.",
+  "A velocidade média da Terra na órbita é de 29,78 km/s, ou cerca de 107 mil km/h (NASA NSSDC Earth Fact Sheet). Sem o puxão do Sol, a Terra segue em linha reta, tangente à órbita, nessa mesma velocidade (primeira lei de Newton).",
+  "O frio: segundo uma estimativa atribuída a David Stevenson (Caltech, citado em https://www.scienceabc.com/nature/universe/what-happen-sun-suddenly-disappeared-earth-life-light-night-dark-moon.html), a temperatura média da superfície cairia abaixo de 0 °F (-18 °C) em cerca de uma semana. Outras fontes populares dão valores um pouco diferentes (Popular Science, https://www.popsci.com/science/article/2013-07/if-sun-went-out-how-long-could-life-earth-survive/). É estimativa, por isso o vídeo diz só 'abaixo de zero'.",
+  "Pensamento de teste: pela conservação da massa e da energia, o Sol não pode simplesmente desaparecer. Se ele só 'apagasse' e continuasse com a mesma massa, a Terra seguiria em órbita (no escuro e no frio). Por isso o vídeo diz 'sumisse'."
+ ],
+ "voz_guia": { "mac": "Luciana", "taxa": 190 },
+ "voz_final": { "id": "", "modelo": "eleven_multilingual_v2" },
+ "falas": [
+  { "id": "A1", "pausa": 0.3, "pedacos": ["E se o *Sol*|sol,terra", "sumisse agora?|terra,orbita"] },
+  { "id": "A2", "pausa": 0.35, "pedacos": ["A Terra ia ficar|terra", "no *escuro*|terra", "na mesma hora?|terra"] },
+  { "id": "A3", "pausa": 0.5, "pedacos": ["Nada disso.|terra", "Por mais de|terra", "*oito minutos*,|terra", "ninguém ia perceber.|terra"] },
+  { "id": "B1", "pausa": 0.4, "pedacos": ["Porque a *luz* dele|luz", "demora oito minutos|luz", "e vinte segundos|luz", "pra chegar aqui.|luz,terra"] },
+  { "id": "B2", "pausa": 0.35, "pedacos": ["Mas tem uma coisa|terra", "ainda mais *estranha*.|terra"] },
+  { "id": "C1", "pausa": 0.3, "pedacos": ["O *puxão* do Sol,|puxao", "que prende a Terra|puxao,terra", "na órbita,|orbita", "demora o *mesmo tempo*.|puxao,luz"] },
+  { "id": "C2", "pausa": 0.4, "pedacos": ["Então a Terra|terra", "segue *girando*|terra,orbita", "em volta|orbita", "de um Sol|orbita", "que *não existe* mais.|orbita"] },
+  { "id": "D1", "pausa": 0.3, "pedacos": ["Aí a *notícia* chega,|puxao,terra", "o puxão acaba,|puxao", "e a Terra|terra", "*se solta*.|terra"] },
+  { "id": "D2", "pausa": 0.3, "pedacos": ["Ela sai em|reta", "*linha reta*,|reta", "a uns|reta", "cento e sete mil|reta", "quilômetros por hora.|reta"] },
+  { "id": "D3", "pausa": 0.35, "pedacos": ["No escuro,|terra", "e cada vez|gelo", "mais *frio*:|gelo", "em uma semana,|gelo", "a superfície já está|gelo", "abaixo de *zero*.|gelo"] },
+  { "id": "Q1", "pausa": 0.2, "pedacos": ["E você,|terra", "o que faria|terra", "nesses *oito minutos*?|terra"] }
+ ]
+}
