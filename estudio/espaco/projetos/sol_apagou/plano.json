@@ -1,0 +1,164 @@
+{
+ "titulo": "E se o Sol apagasse?",
+ "estilo": "vivo",
+ "cauda": 1.7,
+ "objetos": {
+  "sol": {
+   "corpo": "estrelaG",
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "raio": 1.6,
+   "halo": 5,
+   "marcador": true,
+   "brilho": [
+    {
+     "de": "A1:apagasse",
+     "ate": "A1.fim",
+     "para": 0.08
+    }
+   ]
+  },
+  "terra": {
+   "corpo": "terra",
+   "pos": [
+    9,
+    0,
+    4
+   ],
+   "raio": 0.45,
+   "marcador": true
+  },
+  "caminho": {
+   "tipo": "linha",
+   "de": "sol",
+   "para": "terra",
+   "cor": "#FFD166",
+   "largura": 2,
+   "opacidade": 0.5,
+   "aparece": "A2",
+   "fundo": true
+  }
+ },
+ "planos": [
+  {
+   "de": "inicio",
+   "novo": "o Sol de perto, brilhando",
+   "heroi": "sol",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "sol"
+     ],
+     "ocupa": 0.4,
+     "az": -20,
+     "el": 6
+    },
+    "para": {
+     "az": -14
+    },
+    "curva": "meio"
+   }
+  },
+  {
+   "de": "A1:apagasse",
+   "novo": "o Sol apaga",
+   "heroi": "sol",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "sol"
+     ],
+     "ocupa": 0.42,
+     "az": -14,
+     "el": 6
+    },
+    "para": {
+     "ocupa": 0.36
+    },
+    "curva": "chega"
+   }
+  },
+  {
+   "de": "A2",
+   "novo": "a Terra lá longe, ainda iluminada",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "terra"
+     ],
+     "ocupa": 0.4,
+     "az": -60,
+     "el": 10
+    },
+    "para": {
+     "az": -52
+    }
+   }
+  },
+  {
+   "de": "A2.2",
+   "novo": "a luz que ainda está no caminho",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "sol",
+      "terra"
+     ],
+     "ocupa": 0.6,
+     "az": 20,
+     "el": 40
+    },
+    "para": {
+     "az": 26,
+     "el": 36
+    }
+   }
+  },
+  {
+   "de": "Q1",
+   "novo": "a Terra, e a câmera continua chegando",
+   "heroi": "terra",
+   "camera": {
+    "de": {
+     "enquadrar": [
+      "terra"
+     ],
+     "ocupa": 0.34,
+     "az": -40,
+     "el": 12
+    },
+    "para": {
+     "ocupa": 0.42,
+     "az": -30
+    },
+    "curva": "meio"
+   }
+  }
+ ],
+ "eventos": [
+  {
+   "tipo": "pulso",
+   "nome": "luz",
+   "em": "A2.2",
+   "ate": "A2.3",
+   "de": "sol",
+   "para": "terra",
+   "cor": "#fff0c8",
+   "tamanho": 0.35
+  },
+  {
+   "tipo": "som",
+   "em": "A1:apagasse",
+   "nota": "grave"
+  },
+  {
+   "tipo": "som",
+   "em": "Q1",
+   "nota": "plim"
+  }
+ ]
+}
